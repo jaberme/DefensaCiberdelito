@@ -422,13 +422,17 @@ hr {
 }
 
 /* --- Rejillas ----------------------------------------------------------- */
+/* El «min(…, 100%)» es lo que evita que una columna imponga un ancho mayor
+   que el de la pantalla y provoque desplazamiento horizontal. */
 .rejilla {
   display: grid;
   gap: var(--e-6) var(--e-6);
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
 }
 
-.rejilla--dos { grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); }
+.rejilla > * { min-width: 0; }
+
+.rejilla--dos { grid-template-columns: repeat(auto-fit, minmax(min(22rem, 100%), 1fr)); }
 .rejilla--tres { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 @media (max-width: 62rem) { .rejilla--tres { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -493,7 +497,7 @@ hr {
 
 .registro__fila {
   display: grid;
-  grid-template-columns: 7rem 1fr auto;
+  grid-template-columns: minmax(0, 7rem) minmax(0, 1fr) minmax(0, auto);
   gap: var(--e-4);
   align-items: baseline;
   padding-block: var(--e-5);
@@ -520,7 +524,7 @@ hr {
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--tinta-2);
-  white-space: nowrap;
+  min-width: 0;
 }
 
 .estado::before {
@@ -555,7 +559,7 @@ hr {
 
 .entidades > li {
   display: grid;
-  grid-template-columns: 1fr minmax(0, 1.4fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
   gap: var(--e-4);
   align-items: baseline;
   padding-block: var(--e-4);
@@ -590,7 +594,10 @@ hr {
   font-size: 0.92em;
   font-weight: 600;
   padding: 0.05em 0.3em;
-  white-space: nowrap;
+  /* Puede partirse en varias lineas: un marcador largo no debe empujar la
+     pagina a lo ancho. El fondo se dibuja en cada fragmento. */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .aviso {
@@ -611,7 +618,7 @@ hr {
 
 .ficha > div {
   display: grid;
-  grid-template-columns: 10rem 1fr;
+  grid-template-columns: minmax(0, 10rem) minmax(0, 1fr);
   gap: var(--e-4);
   padding-block: var(--e-3);
   border-bottom: 1px solid var(--linea);
@@ -625,7 +632,7 @@ hr {
 
 .programa > li {
   display: grid;
-  grid-template-columns: 8rem 1fr;
+  grid-template-columns: minmax(0, 8rem) minmax(0, 1fr);
   gap: var(--e-4);
   padding-block: var(--e-4);
   border-bottom: 1px solid var(--linea);

@@ -1,0 +1,79 @@
+# Compila el sitio y lo publica en GitHub Pages.
+#
+# Se ejecuta en cada cambio incorporado a la rama principal y tambien a mano
+# desde la pestana Actions. No usa credenciales ni tokens propios: se apoya en
+# el token efimero de GitHub Actions con los permisos minimos necesarios.
+name: Publicar en GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read      # leer el repositorio
+  pages: write        # publicar en Pages
+  id-token: write     # autenticar el despliegue
+
+# Si llegan varios cambios seguidos, se publica el ultimo sin cancelar
+# un despliegue que ya haya empezado.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construir:
+    name: Construir y comprobar
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Determinar el prefijo de ruta
+        id: prefijo
+        # En una URL de proyecto (usuario.github.io/repositorio) el sitio
+        # cuelga de un subdirectorio. Con dominio propio o en un sitio de
+        # usuario, cuelga de la raiz.
+        run: |
+          if [ -f src/CNAME ]; then
+            echo "valor=/" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.repository.name }}" = "${{ github.repository_owner }}.github.io" ]; then
+            echo "valor=/" >> "$GITHUB_OUTPUT"
+          else
+            echo "valor=/${{ github.event.repository.name }}/" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Compilar el sitio
+        run: npx @11ty/eleventy --pathprefix="${{ steps.prefijo.outputs.valor }}"
+
+      - name: Comprobar enlaces y recursos
+        run: node herramientas/comprobar-enlaces.js "${{ steps.prefijo.outputs.valor }}"
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir el sitio compilado
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _sitio
+
+  publicar:
+    name: Publicar
+    needs: construir
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - name: Desplegar en GitHub Pages
+        id: despliegue
+        uses: actions/deploy-pages@v4

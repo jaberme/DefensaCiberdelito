@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+
+# Resultado de la compilacion (lo genera GitHub Actions; no se versiona)
+_sitio/
+
+# Cache de Eleventy y de las herramientas auxiliares
+.cache/
+.eleventy-cache/
+.cache-tipografias/
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Registros
+npm-debug.log*
+*.log

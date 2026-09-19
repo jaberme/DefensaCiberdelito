@@ -1,0 +1,23 @@
+{
+  "name": "web-seminario-ciberdelito",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web institucional del Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciberdelito» (Universidad de Almería).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "inicio": "eleventy --serve",
+    "construir": "eleventy",
+    "construir:pages": "eleventy --pathprefix=/DefensaCiberdelito/",
+    "comprobar": "node herramientas/comprobar-enlaces.js",
+    "verificar": "npm run construir && npm run comprobar",
+    "start": "npm run inicio",
+    "build": "npm run construir",
+    "pendientes": "node herramientas/listar-pendientes.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+<header class="cabecera">
+  <div class="cabecera__interior contenedor">
+    <a class="marca" href="/">
+      <img class="marca__emblema" src="/assets/img/emblema-128.png" width="48" height="48"
+           alt="" srcset="/assets/img/emblema-96.png 96w, /assets/img/emblema-128.png 128w" sizes="48px">
+      <span class="marca__texto">
+        <span class="marca__nombre">Seminario Permanente</span>
+        <span class="marca__materia">Seguridad Nacional, Sociedad Digital y Ciberdelito</span>
+      </span>
+    </a>
+
+    <button class="navegacion__boton" type="button" aria-expanded="false" aria-controls="menu-principal">
+      Menú
+    </button>
+
+    <nav class="navegacion" data-abierta="no" aria-label="Navegación principal">
+      <ul class="navegacion__lista" id="menu-principal">
+        {% for enlace in navegacion.principal %}
+          {% set activo = (page.url == enlace.url) or (enlace.url != "/" and page.url.startsWith(enlace.url)) %}
+          <li>
+            <a class="navegacion__enlace" href="{{ enlace.url }}"{% if activo %} aria-current="page"{% endif %}>{{ enlace.texto }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

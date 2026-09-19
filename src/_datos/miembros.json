@@ -1,0 +1,24 @@
+{
+  "introduccion": "El Seminario Permanente está integrado por un equipo multidisciplinar. Sus miembros proceden del ámbito universitario, de las Fuerzas y Cuerpos de Seguridad del Estado, de la administración pública y del sector empresarial, y participan a título personal y de forma desinteresada.",
+  "advertencia": "Esta página no publica todavía la relación nominal de miembros. Se incorporará cuando exista una lista revisada y cada persona haya dado su conformidad para aparecer con su nombre, cargo y entidad de procedencia.",
+  "procedencias": [
+    {
+      "ambito": "Universidad",
+      "descripcion": "Profesorado e investigadores que aportan el marco académico, la metodología y la capacidad de análisis y difusión científica."
+    },
+    {
+      "ambito": "Fuerzas y Cuerpos de Seguridad del Estado",
+      "descripcion": "Profesionales con experiencia operativa en investigación de la delincuencia informática, análisis forense y respuesta ante incidentes."
+    },
+    {
+      "ambito": "Administración pública",
+      "descripcion": "Responsables públicos que conocen las necesidades de protección de los servicios que la ciudadanía utiliza a diario."
+    },
+    {
+      "ambito": "Empresa",
+      "descripcion": "Especialistas del tejido productivo que aportan la perspectiva de la continuidad de negocio y de la protección de organizaciones y servicios."
+    }
+  ],
+  "listado": [],
+  "instruccionesListado": "Para publicar la relación de miembros, añade objetos al array «listado» con esta forma: { \"nombre\": \"\", \"cargo\": \"\", \"entidad\": \"\", \"ambito\": \"Universidad\" }. El campo «ambito» debe coincidir con uno de los valores de «procedencias». En cuanto el array deje de estar vacío, la web mostrará la relación agrupada por ámbito; mientras esté vacío, muestra el aviso anterior."
+}

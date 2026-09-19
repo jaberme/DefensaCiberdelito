@@ -1,0 +1,102 @@
+---
+layout: base.njk
+tipoSocial: article
+---
+<div class="contenedor contenedor--lectura">
+  <div class="titular">
+    <p class="titular__categoria">Jornadas de Ciberseguridad, Ciberdefensa y Seguridad Nacional</p>
+    <h1>{{ titulo }}</h1>
+    {% if entrada %}<p class="titular__entrada">{{ entrada }}</p>{% endif %}
+  </div>
+</div>
+
+<div class="contenedor contenedor--lectura">
+  <div class="texto">
+    <p><span class="estado estado--{{ 'realizada' if edicion.estado == 'celebrada' else ('programada' if edicion.estado == 'abierta' else 'propuesta') }}">{{ estados.jornada[edicion.estado].etiqueta }}</span></p>
+
+    <dl class="ficha">
+      <div><dt>Edición</dt><dd>{{ edicion.numero }}</dd></div>
+      <div><dt>Año</dt><dd>{{ edicion.anio }}</dd></div>
+      <div><dt>Fechas</dt><dd>{{ edicion.fechas }}</dd></div>
+      <div><dt>Lugar</dt><dd>{{ edicion.lugar }}{% if edicion.direccion %}<br>{{ edicion.direccion }}{% endif %}</dd></div>
+      <div>
+        <dt>Inscripción</dt>
+        <dd>
+          {% if edicion.inscripcion.estado == "abierta" and edicion.inscripcion.enlace %}
+            <a href="{{ edicion.inscripcion.enlace }}">Formalizar la inscripción</a>
+          {% else %}
+            {{ edicion.inscripcion.nota }}
+          {% endif %}
+        </dd>
+      </div>
+    </dl>
+
+    {{ content | safe }}
+  </div>
+</div>
+
+<div class="contenedor contenedor--lectura seccion--ajustada">
+  <div class="cabecera-seccion"><h2 id="programa">Programa</h2></div>
+  {% if programa and programa.length %}
+    <ol class="programa">
+      {% for bloque in programa %}
+        <li>
+          <p class="programa__hora">{{ bloque.hora }}</p>
+          <div>
+            <h3 class="programa__titulo">{{ bloque.titulo }}</h3>
+            {% if bloque.detalle %}<p class="programa__detalle">{{ bloque.detalle }}</p>{% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <div class="vacio">
+      <h3>Programa todavía no publicado</h3>
+      <p>El programa se publicará en esta misma página cuando la organización lo cierre. Hasta entonces no se difunden horarios ni intervenciones provisionales.</p>
+    </div>
+  {% endif %}
+</div>
+
+<div class="contenedor contenedor--lectura seccion--ajustada">
+  <div class="cabecera-seccion"><h2 id="participantes">Ponentes y participantes</h2></div>
+  {% if participantes and participantes.length %}
+    <ul class="participantes">
+      {% for persona in participantes %}
+        <li>
+          <p class="sin-margen"><span class="participante__nombre">{{ persona.nombre }}</span></p>
+          <p class="participante__referencia sin-margen">{{ persona.referencia }}</p>
+          {% if persona.intervencion %}<p class="participante__referencia">{{ persona.intervencion }}</p>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="vacio">
+      <h3>Relación de ponentes en preparación</h3>
+      <p>Solo se publican los nombres de quienes han confirmado su participación y han dado su conformidad para aparecer aquí.</p>
+    </div>
+  {% endif %}
+</div>
+
+{% if materiales and materiales.length %}
+<div class="contenedor contenedor--lectura seccion--ajustada">
+  <div class="cabecera-seccion"><h2 id="materiales">Materiales y documentación</h2></div>
+  <ul class="registro">
+    {% for material in materiales %}
+      <li>
+        <div class="registro__fila">
+          <span class="registro__periodo">{{ material.tipo }}</span>
+          <div>
+            <h3 class="registro__titulo"><a href="{{ material.enlace }}">{{ material.titulo }}</a></h3>
+            {% if material.descripcion %}<p class="registro__resumen">{{ material.descripcion }}</p>{% endif %}
+          </div>
+          <span></span>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="contenedor contenedor--lectura seccion--ajustada">
+  <p><a href="/jornadas/">Volver al archivo de ediciones</a></p>
+</div>

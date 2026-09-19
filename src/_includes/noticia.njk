@@ -1,0 +1,24 @@
+---
+layout: base.njk
+tipoSocial: article
+---
+<div class="contenedor contenedor--lectura">
+  <div class="titular">
+    <p class="titular__categoria">Actualidad</p>
+    <h1>{{ titulo }}</h1>
+    <p class="titular__entrada">{{ entrada }}</p>
+  </div>
+</div>
+
+<div class="contenedor contenedor--lectura">
+  <article class="texto">
+    <p class="noticia__fecha">
+      <time datetime="{{ page.date | fechaISO }}">{{ page.date | fechaLarga }}</time>
+    </p>
+
+    {{ content | safe }}
+
+    <hr>
+    <p><a href="/actualidad/">Volver a Actualidad</a></p>
+  </article>
+</div>

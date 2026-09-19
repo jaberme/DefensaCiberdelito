@@ -1,0 +1,29 @@
+{
+  "introduccion": "Estos ejes recogen los asuntos que el manifiesto fundacional identifica como prioritarios y orientan las actividades del Seminario.",
+  "lista": [
+    {
+      "titulo": "Ciberseguridad y ciberdefensa",
+      "descripcion": "Prevención, protección, respuesta y resiliencia frente a las amenazas que afectan a sistemas, organizaciones y servicios digitales."
+    },
+    {
+      "titulo": "Ciberdelito e investigación digital",
+      "descripcion": "Criminalidad informática, fraude, hacktivismo, informática forense, análisis de malware y retos de la investigación en el entorno digital."
+    },
+    {
+      "titulo": "Inteligencia y análisis de amenazas",
+      "descripcion": "Comprensión de riesgos, tendencias y escenarios que permita fundamentar decisiones informadas en las organizaciones."
+    },
+    {
+      "titulo": "Infraestructuras y servicios esenciales",
+      "descripcion": "Protección y continuidad de las infraestructuras críticas y de los servicios de los que dependen la ciudadanía, las administraciones y las empresas."
+    },
+    {
+      "titulo": "Divulgación y concienciación",
+      "descripcion": "Conocimiento útil, accesible y contrastado para que personas y organizaciones desarrollen su actividad digital con mayor seguridad."
+    },
+    {
+      "titulo": "Cooperación e innovación",
+      "descripcion": "Encuentro estable entre universidad, administraciones, Fuerzas y Cuerpos de Seguridad y sector productivo, como forma de fortalecer la capacidad colectiva."
+    }
+  ]
+}

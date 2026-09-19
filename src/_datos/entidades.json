@@ -1,0 +1,42 @@
+{
+  "advertencia": "Las entidades que figuran a continuación son las que el manifiesto fundacional cita expresamente. Su mención describe el origen profesional de quienes integran el Seminario y el marco de cooperación descrito en el texto; no constituye por sí sola una declaración de patrocinio, un convenio formal ni una autorización para reproducir escudos, logotipos o marcas.",
+  "citadas": [
+    {
+      "nombre": "Universidad de Almería",
+      "ambito": "Universidad",
+      "papel": "Institución desde la que se impulsa el Seminario, según el manifiesto fundacional.",
+      "logotipo": null
+    },
+    {
+      "nombre": "Comisaría Provincial de Policía Nacional en Almería",
+      "ambito": "Fuerzas y Cuerpos de Seguridad del Estado",
+      "papel": "Citada en el manifiesto entre las entidades que cooperan en la iniciativa.",
+      "logotipo": null
+    },
+    {
+      "nombre": "Guardia Civil",
+      "ambito": "Fuerzas y Cuerpos de Seguridad del Estado",
+      "papel": "Citada en el manifiesto entre las entidades que cooperan en la iniciativa.",
+      "logotipo": null
+    },
+    {
+      "nombre": "Diputación Provincial de Almería",
+      "ambito": "Administración pública",
+      "papel": "Citada en el manifiesto entre las entidades que cooperan en la iniciativa.",
+      "logotipo": null
+    },
+    {
+      "nombre": "Cosentino",
+      "ambito": "Empresa",
+      "papel": "Citada en el manifiesto entre las entidades que cooperan en la iniciativa.",
+      "logotipo": null
+    },
+    {
+      "nombre": "Europol",
+      "ambito": "Organismo internacional",
+      "papel": "El manifiesto la menciona al describir la cooperación en el marco de las Jornadas.",
+      "logotipo": null
+    }
+  ],
+  "instruccionesLogotipo": "Para incorporar el logotipo de una entidad: (1) obtén la autorización expresa de uso; (2) guarda el archivo en src/assets/img/entidades/ con un nombre en minúsculas y sin acentos, por ejemplo universidad-de-almeria.svg; (3) escribe esa misma ruta relativa en el campo «logotipo» de este archivo, por ejemplo \"entidades/universidad-de-almeria.svg\". Mientras el campo valga null, la web muestra únicamente la denominación en texto, que es el tratamiento correcto si no hay autorización."
+}

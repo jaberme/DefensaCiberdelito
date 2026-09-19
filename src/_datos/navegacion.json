@@ -1,0 +1,16 @@
+{
+  "principal": [
+    { "texto": "El Seminario", "url": "/seminario/" },
+    { "texto": "Manifiesto", "url": "/manifiesto/" },
+    { "texto": "Miembros", "url": "/miembros/" },
+    { "texto": "Jornadas", "url": "/jornadas/" },
+    { "texto": "Actividades", "url": "/actividades/" },
+    { "texto": "Actualidad", "url": "/actualidad/" },
+    { "texto": "Contacto", "url": "/contacto/" }
+  ],
+  "pie": [
+    { "texto": "Aviso legal y privacidad", "url": "/aviso-legal/" },
+    { "texto": "Declaración de accesibilidad", "url": "/accesibilidad/" },
+    { "texto": "Mapa del sitio", "url": "/mapa-del-sitio/" }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "nombre": "Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciberdelito»",
+  "nombreCorto": "Seminario Permanente",
+  "lema": "Seguridad Nacional, Sociedad Digital y Ciberdelito",
+  "descripcion": "Espacio estable de encuentro, reflexión y divulgación sobre seguridad nacional, sociedad digital y ciberdelincuencia, impulsado desde la Universidad de Almería con carácter altruista y multidisciplinar.",
+  "url": "https://jaberme.github.io/DefensaCiberdelito",
+  "idioma": "es",
+  "localidad": "Almería",
+  "ejes": ["Conocimiento", "Cooperación", "Servicio público"],
+  "contacto": {
+    "correo": null,
+    "marcadorCorreo": "[CORREO DE CONTACTO INSTITUCIONAL]",
+    "nota": "Cuando la dirección institucional esté disponible, escríbela en el campo «correo» de este archivo. La web pasará automáticamente de mostrar el marcador a mostrar un enlace de correo operativo."
+  },
+  "redes": []
+}

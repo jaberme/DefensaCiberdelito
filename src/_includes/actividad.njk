@@ -1,0 +1,29 @@
+---
+layout: base.njk
+tipoSocial: article
+---
+<div class="contenedor contenedor--lectura">
+  <div class="titular">
+    <p class="titular__categoria">Actividades y proyectos</p>
+    <h1>{{ titulo }}</h1>
+    {% if entrada %}<p class="titular__entrada">{{ entrada }}</p>{% endif %}
+  </div>
+</div>
+
+<div class="contenedor contenedor--lectura">
+  <article class="texto">
+    <p><span class="estado estado--{{ estado }}">{{ estados.actividad[estado].etiqueta }}</span></p>
+
+    <dl class="ficha">
+      {% if periodo %}<div><dt>Fecha</dt><dd>{{ periodo | safe }}</dd></div>{% endif %}
+      {% if lugar %}<div><dt>Lugar</dt><dd>{{ lugar | safe }}</dd></div>{% endif %}
+      {% if promueve %}<div><dt>Promueve</dt><dd>{{ promueve | safe }}</dd></div>{% endif %}
+      {% if dirigidoA %}<div><dt>Dirigido a</dt><dd>{{ dirigidoA | safe }}</dd></div>{% endif %}
+    </dl>
+
+    {{ content | safe }}
+
+    <hr>
+    <p><a href="/actividades/">Volver a Actividades y proyectos</a></p>
+  </article>
+</div>

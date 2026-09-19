@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{ sitio.idioma }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% set tituloPagina = titulo if titulo else sitio.nombreCorto %}
+  {% set descripcionPagina = descripcion if descripcion else sitio.descripcion %}
+  {% set direccionCanonica = sitio.url + page.url %}
+
+  <title>{% if page.url == "/" %}{{ sitio.nombreCorto }} · {{ sitio.lema }}{% else %}{{ tituloPagina }} · {{ sitio.nombreCorto }}{% endif %}</title>
+  <meta name="description" content="{{ descripcionPagina }}">
+  <link rel="canonical" href="{{ direccionCanonica }}">
+
+  <meta property="og:type" content="{{ tipoSocial if tipoSocial else 'website' }}">
+  <meta property="og:site_name" content="{{ sitio.nombreCorto }}">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="{{ tituloPagina }}">
+  <meta property="og:description" content="{{ descripcionPagina }}">
+  <meta property="og:url" content="{{ direccionCanonica }}">
+  <meta property="og:image" content="{{ sitio.url }}/assets/img/og-seminario.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Emblema y nombre del Seminario Permanente sobre fondo azul.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/img/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/icono-180.png">
+
+  <link rel="preload" href="/assets/tipografias/source-serif-4-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/tipografias/source-sans-3-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/tipografias/tipografias.css">
+  <link rel="stylesheet" href="/assets/css/estilos.css">
+  <link rel="alternate" type="application/atom+xml" title="Actualidad del {{ sitio.nombreCorto }}" href="/actualidad/feed.xml">
+
+  <script src="/assets/js/navegacion.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": {{ sitio.nombre | dump | safe }},
+    "alternateName": {{ sitio.nombreCorto | dump | safe }},
+    "url": {{ sitio.url | dump | safe }},
+    "logo": {{ (sitio.url + "/assets/img/emblema.png") | dump | safe }},
+    "description": {{ sitio.descripcion | dump | safe }},
+    "areaServed": "ES"
+  }
+  </script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  {% include "parciales/cabecera.njk" %}
+
+  <main id="contenido">
+    {{ content | safe }}
+  </main>
+
+  {% include "parciales/pie.njk" %}
+</body>
+</html>

@@ -1,0 +1,38 @@
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <p class="pie__nombre">Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciberdelito»</p>
+        <p>Iniciativa altruista y multidisciplinar impulsada desde la Universidad de Almería.</p>
+      </div>
+
+      <div>
+        <h2>Secciones</h2>
+        <ul>
+          {% for enlace in navegacion.principal %}
+            <li><a href="{{ enlace.url }}">{{ enlace.texto }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h2>Información del sitio</h2>
+        <ul>
+          {% for enlace in navegacion.pie %}
+            <li><a href="{{ enlace.url }}">{{ enlace.texto }}</a></li>
+          {% endfor %}
+          <li><a href="/actualidad/feed.xml">Canal de novedades (Atom)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie__legal">
+      <p>
+        La mención de instituciones, organismos y empresas describe el marco de cooperación
+        recogido en el manifiesto fundacional. No constituye por sí sola una declaración de
+        patrocinio ni una autorización para reproducir sus escudos, logotipos o marcas.
+      </p>
+      <p>Almería. Última actualización del sitio: {{ compilacion.fecha | fechaLarga }}.</p>
+    </div>
+  </div>
+</footer>

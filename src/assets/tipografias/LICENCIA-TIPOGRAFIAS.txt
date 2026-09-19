@@ -1,0 +1,15 @@
+Las tipografias incluidas en este directorio se distribuyen bajo la
+SIL Open Font License, version 1.1.
+
+  Source Serif 4  - Copyright 2014-2023 Adobe (http://www.adobe.com/),
+                    con Reserved Font Name 'Source'.
+  Source Sans 3   - Copyright 2010-2023 Adobe (http://www.adobe.com/),
+                    con Reserved Font Name 'Source'.
+
+Texto completo de la licencia: https://openfontlicense.org/
+
+Los archivos .woff2 son subconjuntos (latin y latin-ext) obtenidos del
+servicio de Google Fonts. Se alojan en este repositorio de forma
+deliberada: asi la web no realiza ninguna peticion a servidores de
+terceros y no transmite la direccion IP de las personas visitantes
+fuera del alojamiento del sitio.

@@ -1,0 +1,10 @@
+Logotipos de entidades.
+
+Aquí solo deben depositarse logotipos cuyo uso haya sido **expresamente autorizado**
+por su titular. El procedimiento está en `docs/guia-contenidos.md`.
+
+Formato preferido: `.svg`. En su defecto, `.png` con fondo transparente y al menos
+600 píxeles de ancho. Nombre del archivo en minúsculas, sin acentos y con guiones.
+
+Una vez depositado el archivo, indica su ruta en el campo `logotipo` de la entidad
+correspondiente, en `src/_datos/entidades.json`.

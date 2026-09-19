@@ -1,0 +1,7 @@
+Documentos publicados: programas, actas, presentaciones y materiales de las Jornadas
+y de las actividades.
+
+Se enlazan desde el contenido con la ruta `/assets/documentos/nombre-del-archivo.pdf`.
+
+Cuando un documento proceda de terceros y no cumpla los requisitos de accesibilidad,
+conviene ofrecer en la propia página un resumen o una alternativa accesible.

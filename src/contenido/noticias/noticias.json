@@ -1,0 +1,4 @@
+{
+  "layout": "noticia.njk",
+  "permalink": "/actualidad/{{ page.fileSlug }}/"
+}

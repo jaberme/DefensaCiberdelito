@@ -1,0 +1,65 @@
+---
+layout: base.njk
+permalink: /mapa-del-sitio/
+titulo: Mapa del sitio
+descripcion: Índice completo de las páginas de la web del Seminario Permanente.
+---
+<div class="contenedor contenedor--lectura">
+  <div class="titular">
+    <p class="titular__categoria">Información del sitio</p>
+    <h1>Mapa del sitio</h1>
+    <p class="titular__entrada">Todas las páginas publicadas, ordenadas por sección.</p>
+  </div>
+</div>
+
+<div class="contenedor contenedor--lectura">
+  <div class="prosa">
+    <h2>Secciones principales</h2>
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      {% for enlace in navegacion.principal %}
+        <li><a href="{{ enlace.url }}">{{ enlace.texto }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <h2>Jornadas</h2>
+    {% if collections.jornadas.length %}
+      <ul>
+        {% for edicion in collections.jornadas %}
+          <li><a href="{{ edicion.url }}">{{ edicion.data.titulo }}</a></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No hay ediciones publicadas.</p>
+    {% endif %}
+
+    <h2>Actividades y proyectos</h2>
+    {% if collections.actividades.length %}
+      <ul>
+        {% for actividad in collections.actividades %}
+          <li><a href="{{ actividad.url }}">{{ actividad.data.titulo }}</a></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No hay actividades publicadas.</p>
+    {% endif %}
+
+    <h2>Actualidad</h2>
+    {% if collections.noticias.length %}
+      <ul>
+        {% for noticia in collections.noticias %}
+          <li><a href="{{ noticia.url }}">{{ noticia.data.titulo }}</a></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No hay publicaciones.</p>
+    {% endif %}
+
+    <h2>Información del sitio</h2>
+    <ul>
+      {% for enlace in navegacion.pie %}
+        <li><a href="{{ enlace.url }}">{{ enlace.texto }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

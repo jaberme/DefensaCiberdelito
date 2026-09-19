@@ -1,0 +1,82 @@
+---
+layout: base.njk
+permalink: /actividades/
+titulo: Actividades y proyectos
+descripcion: Conferencias, formación, investigación, divulgación y proyectos impulsados desde el Seminario Permanente, distinguiendo las actividades realizadas, las programadas y las propuestas aún sin confirmar.
+---
+<div class="contenedor">
+  <div class="titular">
+    <p class="titular__categoria">Trabajo del Seminario</p>
+    <h1>Actividades y proyectos</h1>
+    <p class="titular__entrada">
+      Todo lo que el Seminario pone en marcha: conferencias, formación, investigación,
+      divulgación y colaboraciones. Cada iniciativa indica en qué punto está, para no presentar
+      como cerrado lo que todavía se está estudiando.
+    </p>
+  </div>
+</div>
+
+<div class="contenedor">
+  <div class="leyenda">
+    {% for clave, estado in estados.actividad %}
+      <div class="leyenda__apunte">
+        <span class="estado estado--{{ clave }}">{{ estado.etiqueta }}</span>
+        {{ estado.descripcion }}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% set orden = ["programada", "realizada", "propuesta"] %}
+  {% set hayAlguna = collections.actividades.length %}
+
+  {% if hayAlguna %}
+    {% for clave in orden %}
+      {% set grupo = collections.actividades | porEstado(clave) %}
+      {% if grupo.length %}
+        <div class="cabecera-seccion" style="margin-top: 3rem;">
+          <h2>{{ estados.actividad[clave].etiqueta }}{% if clave != "propuesta" %}s{% endif %}</h2>
+        </div>
+        <ul class="registro">
+          {% for actividad in grupo %}
+            <li>
+              <div class="registro__fila">
+                <span class="registro__periodo">{{ actividad.data.periodo }}</span>
+                <div>
+                  <h3 class="registro__titulo"><a href="{{ actividad.url }}">{{ actividad.data.titulo }}</a></h3>
+                  <p class="registro__resumen">{{ actividad.data.entrada }}</p>
+                </div>
+                <span class="estado estado--{{ clave }}">{{ estados.actividad[clave].etiqueta }}</span>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <div class="vacio">
+      <h3>Todavía no hay actividades publicadas en esta sección</h3>
+      <p>
+        Aquí se recogerán las conferencias, los cursos, los trabajos de investigación y las
+        colaboraciones que el Seminario ponga en marcha, cada una con su estado.
+      </p>
+      <p>
+        Las <a href="/jornadas/">Jornadas de Ciberseguridad, Ciberdefensa y Seguridad
+        Nacional</a> tienen sección propia por su volumen y por su carácter anual.
+      </p>
+    </div>
+  {% endif %}
+</div>
+
+<div class="contenedor seccion">
+  <div class="rejilla rejilla--dos">
+    <div class="prosa">
+      <h2>Proponer una actividad</h2>
+      <p>
+        El manifiesto condiciona los nuevos proyectos a que cuenten con respaldo e interés de la
+        comunidad. Si una institución, una empresa o un grupo de profesionales quiere plantear
+        una colaboración, el Seminario la estudiará con ese criterio.
+      </p>
+      <p><a class="boton boton--tinta" href="/contacto/">Plantear una propuesta</a></p>
+    </div>
+  </div>
+</div>

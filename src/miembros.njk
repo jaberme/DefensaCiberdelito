@@ -1,0 +1,109 @@
+---
+layout: base.njk
+permalink: /miembros/
+titulo: Miembros y colaboración institucional
+descripcion: Composición multidisciplinar del Seminario Permanente y entidades citadas en su manifiesto fundacional.
+---
+<div class="contenedor">
+  <div class="titular">
+    <p class="titular__categoria">Composición y cooperación</p>
+    <h1>Miembros y colaboración institucional</h1>
+    <p class="titular__entrada">{{ miembros.introduccion }}</p>
+  </div>
+</div>
+
+<div class="contenedor">
+  <div class="rejilla rejilla--dos">
+    <div class="prosa">
+      <h2>Ámbitos de procedencia</h2>
+      <p>
+        Quienes forman parte del Seminario lo hacen a título personal. Su pertenencia a una
+        institución o empresa explica el punto de vista que aportan, pero no convierte al
+        Seminario en órgano de ninguna de ellas.
+      </p>
+    </div>
+
+    <ul class="entidades" style="border-top: 0;">
+      {% for procedencia in miembros.procedencias %}
+        <li>
+          <span class="entidad__nombre">{{ procedencia.ambito }}</span>
+          <p class="entidad__papel">{{ procedencia.descripcion }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="contenedor seccion">
+  <div class="cabecera-seccion"><h2>Relación de miembros</h2></div>
+
+  {% if miembros.listado.length %}
+    {% for procedencia in miembros.procedencias %}
+      {% set delAmbito = miembros.listado | filtrarPor("ambito", procedencia.ambito) %}
+      {% if delAmbito.length %}
+        <h3>{{ procedencia.ambito }}</h3>
+        <ul class="participantes">
+          {% for persona in delAmbito %}
+            <li>
+              <p class="sin-margen"><span class="participante__nombre">{{ persona.nombre }}</span></p>
+              <p class="participante__referencia sin-margen">{{ persona.cargo }}{% if persona.entidad %}. {{ persona.entidad }}{% endif %}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <div class="aviso">
+      <h3>Relación nominal pendiente de publicación</h3>
+      <p>{{ miembros.advertencia }}</p>
+      <p>Datos necesarios para publicarla: <span class="pendiente">[NOMBRE]</span>, <span class="pendiente">[CARGO]</span>, <span class="pendiente">[ENTIDAD DE PROCEDENCIA]</span> y la conformidad expresa de cada persona.</p>
+    </div>
+  {% endif %}
+</div>
+
+<div class="contenedor seccion">
+  <div class="cabecera-seccion"><h2>Entidades citadas en el manifiesto</h2></div>
+
+  <p class="prosa">{{ entidades.advertencia }}</p>
+
+  <ul class="entidades" style="margin-top: 2rem;">
+    {% for entidad in entidades.citadas %}
+      <li>
+        <div>
+          <span class="entidad__nombre">{{ entidad.nombre }}</span>
+          <span class="entidad__ambito">{{ entidad.ambito }}</span>
+        </div>
+        <p class="entidad__papel">{{ entidad.papel }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="contenedor seccion">
+  <div class="aviso">
+    <h3>Logotipos y emblemas institucionales</h3>
+    <p>
+      Esta web no reproduce escudos, logotipos ni marcas de las entidades mencionadas. Solo se
+      incorporarán aquellos cuyo uso haya sido expresamente autorizado por su titular, y en los
+      términos que esa autorización establezca.
+    </p>
+    <p>
+      Una vez obtenida la autorización, el archivo se deposita en
+      <code>src/assets/img/entidades/</code> y se indica su ruta en
+      <code>src/_datos/entidades.json</code>. El procedimiento está descrito en el archivo
+      <code>docs/guia-contenidos.md</code> del repositorio.
+    </p>
+  </div>
+</div>
+
+<div class="contenedor">
+  <div class="prosa">
+    <h2>Incorporarse al Seminario</h2>
+    <p>
+      El manifiesto fundacional deja el Seminario abierto a profesionales y especialistas del
+      ámbito civil, policial o militar que deseen contribuir de forma desinteresada a sus
+      objetivos, y a entidades que quieran proponer iniciativas conjuntas.
+    </p>
+    <p><a class="boton boton--tinta" href="/contacto/">Cómo ponerse en contacto</a></p>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+---
+layout: base.njk
+permalink: /contacto/
+titulo: Contacto y participación
+descripcion: Vías para ponerse en contacto con el Seminario Permanente, proponer colaboraciones o solicitar la incorporación como especialista.
+---
+<div class="contenedor">
+  <div class="titular">
+    <p class="titular__categoria">Participación</p>
+    <h1>Contacto y participación</h1>
+    <p class="titular__entrada">
+      El Seminario está abierto a quien quiera contribuir a sus objetivos y a las entidades
+      interesadas en colaborar. La participación es voluntaria y no retribuida.
+    </p>
+  </div>
+</div>
+
+<div class="contenedor">
+  <div class="rejilla rejilla--dos">
+    <div class="prosa">
+      <h2>Cómo escribir al Seminario</h2>
+      {% if sitio.contacto.correo %}
+        <p>
+          Puedes dirigir tu mensaje a
+          <a href="mailto:{{ sitio.contacto.correo }}">{{ sitio.contacto.correo }}</a>,
+          indicando el motivo y, si procede, tu ámbito profesional.
+        </p>
+      {% else %}
+        <div class="aviso">
+          <h3>Dirección de contacto pendiente de publicación</h3>
+          <p>
+            La dirección institucional del Seminario se publicará en esta página en cuanto esté
+            disponible: {{ sitio.contacto.marcadorCorreo }}.
+          </p>
+          <p>
+            No se ofrece aquí un formulario de contacto porque esta web es un sitio estático y
+            no dispone de un sistema que reciba los mensajes. Publicar un formulario que no
+            funcionase daría por atendidas solicitudes que en realidad se perderían.
+          </p>
+        </div>
+      {% endif %}
+
+      <h2>Qué conviene indicar</h2>
+      <ul>
+        <li>Quién escribe y desde qué ámbito: universidad, Fuerzas y Cuerpos de Seguridad, administración, empresa u otro.</li>
+        <li>El motivo: incorporación al Seminario, propuesta de actividad, colaboración institucional, consulta de prensa u otro asunto.</li>
+        <li>Si se trata de una propuesta, una descripción breve y qué se necesitaría para llevarla a cabo.</li>
+      </ul>
+    </div>
+
+    <div class="prosa">
+      <h2>Incorporarse como especialista</h2>
+      <p>
+        El manifiesto fundacional deja el Seminario abierto a profesionales del ámbito civil,
+        policial o militar que quieran contribuir de forma desinteresada. No hay cuota ni
+        proceso selectivo formal: se valora el interés en la materia y la disposición a aportar
+        trabajo.
+      </p>
+
+      <h2>Colaboración institucional</h2>
+      <p>
+        Las instituciones y empresas que deseen colaborar pueden proponer actividades conjuntas,
+        cesión de espacios, participación de sus especialistas o difusión de las iniciativas. Las
+        condiciones de cada colaboración se acuerdan caso por caso y se reflejan públicamente
+        solo cuando están cerradas.
+      </p>
+
+      <h2>Medios de comunicación</h2>
+      <p>
+        Para solicitudes de prensa, la vía es la misma dirección de contacto. Los materiales
+        gráficos disponibles para uso informativo están en la sección
+        <a href="/actualidad/">Actualidad</a> junto a cada publicación.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="contenedor seccion">
+  <div class="aviso">
+    <h3>Tratamiento de datos</h3>
+    <p>
+      Esta web no recoge datos personales: no incluye formularios, ni sistemas de analítica, ni
+      herramientas de seguimiento, ni recursos alojados en servidores de terceros. Si en el
+      futuro alguna actividad requiere recoger datos —por ejemplo, una inscripción—, se hará a
+      través de un servicio institucional de la Universidad de Almería, que informará del
+      tratamiento correspondiente. Puedes consultar los detalles en el
+      <a href="/aviso-legal/">aviso legal</a>.
+    </p>
+  </div>
+</div>

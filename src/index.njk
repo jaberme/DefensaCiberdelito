@@ -1,0 +1,201 @@
+---
+layout: base.njk
+titulo: Inicio
+descripcion: Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciberdelito». Espacio estable de encuentro, reflexión y divulgación impulsado desde la Universidad de Almería, con participación de la universidad, las Fuerzas y Cuerpos de Seguridad, las administraciones públicas y el sector empresarial.
+---
+<section class="portada fondo-oscuro">
+  <div class="contenedor portada__interior">
+    <div>
+      <h1 class="portada__titulo">Seguridad Nacional, Sociedad Digital y Ciberdelito</h1>
+      <hr class="portada__regla">
+    </div>
+    <div>
+      <p class="portada__entrada">
+        Un seminario permanente impulsado desde la Universidad de Almería, donde el ámbito
+        universitario, las Fuerzas y Cuerpos de Seguridad, las administraciones públicas y las
+        empresas ponen en común lo que saben sobre la seguridad del entorno digital.
+      </p>
+      <div class="portada__acciones">
+        <a class="boton boton--principal" href="/seminario/">Conoce el Seminario</a>
+        <a class="boton boton--contorno" href="/manifiesto/">Lee el manifiesto</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Qué es el Seminario</h2>
+      <a href="/seminario/">Origen, misión y objetivos</a>
+    </div>
+
+    <div class="rejilla rejilla--dos">
+      <div>
+        <p>
+          El Seminario Permanente es una iniciativa altruista que trabaja sobre la relación entre
+          la seguridad nacional, la transformación digital y la ciberdelincuencia. Reúne a
+          personas que se dedican a ello desde sitios distintos —el aula, la investigación
+          policial, la gestión pública y la empresa— porque ninguno de esos puntos de vista
+          basta por sí solo para entender el problema.
+        </p>
+        <p>
+          No es un congreso ni una actividad con fecha de caducidad. Nace con voluntad de
+          continuidad: mantener un espacio estable de análisis y divulgación, y abrirlo a quien
+          quiera contribuir de forma desinteresada.
+        </p>
+      </div>
+
+      <blockquote class="conviccion">
+        <p>La ciberseguridad es responsabilidad de todos y juntos somos más fuertes.</p>
+        <cite>Manifiesto fundacional del Seminario</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="seccion seccion--tinte">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Ejes de trabajo</h2>
+    </div>
+    <p class="prosa">{{ ejes.introduccion }}</p>
+    <div class="rejilla rejilla--tres" style="margin-top: 2rem;">
+      {% for eje in ejes.lista %}
+        <div class="eje">
+          <h3>{{ eje.titulo }}</h3>
+          <p>{{ eje.descripcion }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Jornadas de Ciberseguridad, Ciberdefensa y Seguridad Nacional</h2>
+      <a href="/jornadas/">Todas las ediciones</a>
+    </div>
+
+    <div class="rejilla rejilla--dos">
+      <div class="prosa">
+        <p>
+          Las Jornadas son la actividad más visible del Seminario, pero no son el Seminario.
+          Son el momento en que el trabajo del año se abre al público: un encuentro sobre
+          criminalidad informática, fraude, hacktivismo, protección de infraestructuras críticas
+          y gestión de incidentes, dirigido tanto a especialistas como a quien quiera entender
+          a qué se expone.
+        </p>
+      </div>
+
+      <div>
+        {% set proximas = collections.jornadas %}
+        {% if proximas.length %}
+          <ul class="registro">
+            {% for edicion in proximas | limitar(3) %}
+              <li>
+                <div class="registro__fila">
+                  <span class="registro__periodo">{{ edicion.data.edicion.anio }}</span>
+                  <div>
+                    <h3 class="registro__titulo"><a href="{{ edicion.url }}">{{ edicion.data.titulo }}</a></h3>
+                    <p class="registro__resumen registro__datos">
+                      <span>{{ edicion.data.edicion.fechas }}</span>
+                      <span>{{ edicion.data.edicion.lugar }}</span>
+                    </p>
+                  </div>
+                  <span class="estado estado--{{ 'realizada' if edicion.data.edicion.estado == 'celebrada' else ('programada' if edicion.data.edicion.estado == 'abierta' else 'propuesta') }}">{{ estados.jornada[edicion.data.edicion.estado].etiqueta }}</span>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <div class="vacio">
+            <h3>Sin ediciones publicadas</h3>
+            <p>Cuando se abra una edición, aparecerá aquí con su programa y sus condiciones de participación.</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion seccion--tinte">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Quiénes participan</h2>
+      <a href="/miembros/">Composición y colaboración institucional</a>
+    </div>
+
+    <div class="rejilla rejilla--dos">
+      <div class="prosa">
+        <p>
+          El Seminario está formado por profesionales que participan a título personal y de
+          forma desinteresada. Proceden de cuatro ámbitos que rara vez se sientan en la misma
+          mesa, y esa mezcla es justamente lo que se quiere conservar.
+        </p>
+        <ul>
+          {% for procedencia in miembros.procedencias %}
+            <li><strong>{{ procedencia.ambito }}.</strong> {{ procedencia.descripcion }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h3>Entidades citadas en el manifiesto</h3>
+        <ul class="tira-entidades">
+          {% for entidad in entidades.citadas %}
+            <li>{{ entidad.nombre }}</li>
+          {% endfor %}
+        </ul>
+        <p style="font-size: var(--t-xs); color: var(--gris); margin-top: 1.25rem; max-width: 46ch;">
+          {{ entidades.advertencia }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Actualidad</h2>
+      <a href="/actualidad/">Todas las publicaciones</a>
+    </div>
+
+    {% set ultimas = collections.noticias %}
+    {% if ultimas.length %}
+      <div class="rejilla">
+        {% for noticia in ultimas | limitar(3) %}
+          <article class="noticia">
+            <time class="noticia__fecha" datetime="{{ noticia.date | fechaISO }}">{{ noticia.date | fechaLarga }}</time>
+            <h3><a href="{{ noticia.url }}">{{ noticia.data.titulo }}</a></h3>
+            <p>{{ noticia.data.entrada }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="vacio">
+        <h3>Todavía no hay publicaciones</h3>
+        <p>Las noticias, comunicados y resultados de las actividades del Seminario se publicarán en esta sección.</p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="seccion seccion--tinte">
+  <div class="contenedor">
+    <div class="rejilla rejilla--dos">
+      <div class="prosa">
+        <h2>Participar en el Seminario</h2>
+        <p>
+          El Seminario está abierto a profesionales y especialistas del ámbito civil, policial o
+          militar que quieran contribuir a sus objetivos, y a instituciones y empresas
+          interesadas en proponer iniciativas conjuntas. La participación es voluntaria y no
+          retribuida.
+        </p>
+        <p><a class="boton boton--tinta" href="/contacto/">Cómo ponerse en contacto</a></p>
+      </div>
+    </div>
+  </div>
+</section>

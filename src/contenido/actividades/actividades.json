@@ -1,0 +1,4 @@
+{
+  "layout": "actividad.njk",
+  "permalink": "/actividades/{{ page.fileSlug }}/"
+}

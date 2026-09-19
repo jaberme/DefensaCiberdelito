@@ -1,0 +1,4 @@
+{
+  "layout": "jornada.njk",
+  "permalink": "/jornadas/{{ page.fileSlug }}/"
+}

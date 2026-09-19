@@ -1,0 +1,27 @@
+---
+permalink: /actualidad/feed.xml
+eleventyExcludeFromCollections: true
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Actualidad del {{ sitio.nombreCorto }}</title>
+  <subtitle>{{ sitio.descripcion }}</subtitle>
+  <link href="{{ sitio.url }}/actualidad/feed.xml" rel="self"/>
+  <link href="{{ sitio.url }}/actualidad/"/>
+  <updated>{% if collections.noticias.length %}{{ collections.noticias[0].date.toISOString() }}{% else %}{{ compilacion.fecha }}{% endif %}</updated>
+  <id>{{ sitio.url }}/actualidad/</id>
+  <author>
+    <name>{{ sitio.nombreCorto }}</name>
+  </author>
+  <rights>Contenido publicado por el {{ sitio.nombreCorto }}.</rights>
+{%- for noticia in collections.noticias %}
+  <entry>
+    <title>{{ noticia.data.titulo }}</title>
+    <link href="{{ sitio.url }}{{ noticia.url }}"/>
+    <updated>{{ noticia.date.toISOString() }}</updated>
+    <id>{{ sitio.url }}{{ noticia.url }}</id>
+    <summary>{{ noticia.data.entrada }}</summary>
+  </entry>
+{%- endfor %}
+</feed>

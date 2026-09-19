@@ -1,0 +1,18 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for pagina in collections.all %}
+  {%- if pagina.url and not pagina.data.eleventyExcludeFromCollections and pagina.outputPath and pagina.outputPath.endsWith(".html") %}
+  <url>
+    <loc>{{ sitio.url }}{{ pagina.url }}</loc>
+    <lastmod>{{ pagina.date | fechaISO }}</lastmod>
+    <changefreq>{% if pagina.url == "/" or pagina.url == "/actualidad/" %}weekly{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if pagina.url == "/" %}1.0{% elif pagina.url == "/jornadas/" or pagina.url == "/seminario/" or pagina.url == "/manifiesto/" %}0.8{% else %}0.6{% endif %}</priority>
+  </url>
+  {%- endif %}
+{%- endfor %}
+</urlset>

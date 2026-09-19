@@ -1,0 +1,43 @@
+---
+layout: base.njk
+permalink: /actualidad/
+titulo: Actualidad
+descripcion: Noticias, comunicados y resultados de las actividades del Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciberdelito».
+---
+<div class="contenedor">
+  <div class="titular">
+    <p class="titular__categoria">Noticias y comunicados</p>
+    <h1>Actualidad</h1>
+    <p class="titular__entrada">
+      Avisos, resultados de actividades, colaboraciones y cualquier otra información que el
+      Seminario considere de interés público.
+    </p>
+  </div>
+</div>
+
+<div class="contenedor">
+  {% if collections.noticias.length %}
+    <ul class="lista-noticias">
+      {% for noticia in collections.noticias %}
+        <li>
+          <article class="noticia">
+            <time class="noticia__fecha" datetime="{{ noticia.date | fechaISO }}">{{ noticia.date | fechaLarga }}</time>
+            <h3><a href="{{ noticia.url }}">{{ noticia.data.titulo }}</a></h3>
+            <p>{{ noticia.data.entrada }}</p>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="vacio">
+      <h3>Todavía no hay publicaciones</h3>
+      <p>Cuando se publique la primera noticia aparecerá en esta página y en el canal de novedades.</p>
+    </div>
+  {% endif %}
+
+  <p style="margin-top: 3rem;">
+    Puedes seguir las novedades mediante el
+    <a href="/actualidad/feed.xml">canal Atom</a>, sin necesidad de registrarte ni de facilitar
+    ningún dato.
+  </p>
+</div>

@@ -1,0 +1,87 @@
+---
+layout: base.njk
+permalink: /jornadas/
+titulo: Jornadas de Ciberseguridad, Ciberdefensa y Seguridad Nacional
+descripcion: Archivo de ediciones de las Jornadas de Ciberseguridad, Ciberdefensa y Seguridad Nacional organizadas en el marco del Seminario Permanente.
+---
+<div class="contenedor">
+  <div class="titular">
+    <p class="titular__categoria">Actividad del Seminario Permanente</p>
+    <h1>Jornadas de Ciberseguridad, Ciberdefensa y Seguridad Nacional</h1>
+    <p class="titular__entrada">
+      El encuentro anual en el que el trabajo del Seminario se abre al público. Cada edición
+      tiene su propia página con programa, participantes, información práctica y, una vez
+      celebrada, la documentación que se haya podido publicar.
+    </p>
+  </div>
+</div>
+
+<div class="contenedor">
+  <div class="rejilla rejilla--dos">
+    <div class="prosa">
+      <h2>Qué son</h2>
+      <p>
+        Las Jornadas reúnen durante unos días a profesionales de la investigación policial, la
+        universidad, la administración y la empresa para tratar la criminalidad informática, el
+        fraude, el hacktivismo, la protección de infraestructuras críticas y la gestión de
+        incidentes, entre otros asuntos.
+      </p>
+      <p>
+        Son la actividad más visible del Seminario Permanente, pero forman parte de un trabajo
+        continuado: lo que se discute en cada edición orienta las actividades del resto del año.
+      </p>
+    </div>
+    <div class="prosa">
+      <h2>A quién se dirigen</h2>
+      <p>
+        A especialistas en ciberseguridad, ciberdefensa e informática forense; a profesionales de
+        las Fuerzas y Cuerpos de Seguridad; a responsables de administraciones y empresas que
+        deben proteger servicios y datos; y a estudiantes y personas sin formación técnica
+        interesadas en entender a qué se exponen.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="contenedor seccion">
+  <div class="cabecera-seccion"><h2>Ediciones</h2></div>
+
+  {% if collections.jornadas.length %}
+    <ul class="registro">
+      {% for edicion in collections.jornadas %}
+        <li>
+          <div class="registro__fila">
+            <span class="registro__periodo">{{ edicion.data.edicion.anio }}</span>
+            <div>
+              <h3 class="registro__titulo"><a href="{{ edicion.url }}">{{ edicion.data.titulo }}</a></h3>
+              <p class="registro__resumen">{{ edicion.data.entrada }}</p>
+              <p class="registro__resumen registro__datos">
+                <span>{{ edicion.data.edicion.fechas }}</span>
+                <span>{{ edicion.data.edicion.lugar }}</span>
+              </p>
+            </div>
+            <span class="estado estado--{{ 'realizada' if edicion.data.edicion.estado == 'celebrada' else ('programada' if edicion.data.edicion.estado == 'abierta' else 'propuesta') }}">{{ estados.jornada[edicion.data.edicion.estado].etiqueta }}</span>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="vacio">
+      <h3>Sin ediciones publicadas</h3>
+      <p>Cuando se convoque una edición, aparecerá en este registro con su página propia.</p>
+    </div>
+  {% endif %}
+</div>
+
+<div class="contenedor">
+  <div class="aviso">
+    <h3>Inscripción y datos personales</h3>
+    <p>
+      Esta web es un sitio estático y no recoge ni almacena datos personales. Cuando se abra el
+      plazo de inscripción de una edición, la página de esa edición enlazará al servicio
+      institucional que gestione las solicitudes, que será quien informe del tratamiento de los
+      datos. No se publicará ningún formulario que aparente funcionar sin un sistema real de
+      recepción detrás.
+    </p>
+  </div>
+</div>

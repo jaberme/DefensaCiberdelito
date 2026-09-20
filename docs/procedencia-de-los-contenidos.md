@@ -41,7 +41,7 @@ declarada del Seminario, no una posición ya alcanzada.
 | Archivo | Qué es | Qué hacer |
 |---|---|---|
 | `src/contenido/noticias/puesta-en-marcha-de-la-web.md` | Noticia sobre la apertura de la web, fechada el 20 de septiembre de 2026 | Ajustar la fecha a la de publicación real, o eliminarla si se prefiere estrenar sin noticias |
-| `src/contenido/jornadas/proxima-edicion.md` | Ficha de la próxima edición, con todos los datos concretos marcados como pendientes | Rellenar cuando se cierren; renombrar el archivo con el año, por ejemplo `2027.md` |
+| `src/contenido/jornadas/2027.md` | Ficha de las III Jornadas, con el cuerpo del texto todavía sin redactar y las listas de programa, participantes y materiales vacías | Redactar la presentación y los apartados; rellenar programa y participantes cuando la organización los cierre |
 
 La sección «Actividades y proyectos» se entrega **vacía a propósito**: no se ha inventado
 ninguna actividad. Muestra un texto que explica qué contendrá y remite a las Jornadas.

@@ -2,7 +2,7 @@
 titulo: "III Jornadas de Ciberseguridad: garantizar la estabilidad del sector agro y logístico almeriense"
 entrada: El sector agroalimentario está clasificado por NIS2 como un sector crítico, en suma, forma parte del PIB de nuestra provincia. No sólo es importante por la producción que genera sino, además, por la cadena de dependencia proveedor-cliente que mantiene. Su caída, provocaría una caída en cadena que tendría implicaciones muy serias.
 descripcion: Jornadas de Ciberseguridad, Almería, Universidad de Almería.
-date: 2026-01-31
+date: 2026-09-20
 ---
 
 En febrero tendrán lugar las III Jornadas de Ciberseguridad. Organizadas por nuestro Seminario y con el objetivo puesto en concienciar y proteger al sector productivo y logístico de nuestra provincia. 
@@ -27,9 +27,3 @@ En el transporte agroalimentario, la integridad y disponibilidad de estos sistem
 Por todo ello, **la ciberseguridad debe abordarse como un elemento integral de la continuidad del negocio y de la resiliencia de todo el ecosistema agroalimentario y logístico**, y no únicamente como una cuestión de protección de sistemas informáticos. Es necesario promover una visión compartida que contemple las interdependencias entre empresas, proveedores tecnológicos, operadores logísticos, administraciones públicas y clientes, fomentando la prevención, la detección temprana de amenazas, la capacidad de respuesta y la recuperación ante incidentes.
 
 Proteger estos sectores significa, en definitiva, proteger mucho más que datos e infraestructuras tecnológicas: significa **preservar la capacidad productiva, garantizar el abastecimiento, mantener la continuidad de las exportaciones y contribuir a la estabilidad económica y social de nuestro territorio**.
-
-## Datos todavía sin confirmar
-
-Si algún dato no está cerrado, escríbelo entre corchetes y en mayúsculas:
-[FECHA POR CONFIRMAR]. La web lo resaltará automáticamente como información
-provisional, de modo que nadie lo dé por supuesto.

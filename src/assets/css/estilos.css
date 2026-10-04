@@ -769,11 +769,15 @@ hr {
 .sin-margen { margin-bottom: 0; }
 
 /* --- Vídeo en noticias -------------------------------------------------- */
-.video { margin-block: var(--e-6); }
+.video {
+  width: min(100%, 40rem);
+  margin: var(--e-6) auto;
+}
 
 .video video {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   background: #000;
 }
@@ -782,6 +786,7 @@ hr {
   margin-top: var(--e-2);
   color: var(--gris);
   font-size: var(--t-s);
+  text-align: center;
 }
 
 /* --- Adaptacion a pantallas pequenas ------------------------------------ */

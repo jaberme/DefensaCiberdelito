@@ -145,7 +145,18 @@ descripcion: Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciber
         <h3>Entidades citadas en el manifiesto</h3>
         <ul class="tira-entidades">
           {% for entidad in entidades.citadas %}
-            <li>{{ entidad.nombre }}</li>
+            <li>
+              {% if entidad.logotipo %}
+                <img
+                  src="/assets/img/{{ entidad.logotipo }}"
+                  alt=""
+                  width="144"
+                  height="64"
+                  loading="lazy"
+                  decoding="async">
+              {% endif %}
+              <span>{{ entidad.nombre }}</span>
+            </li>
           {% endfor %}
         </ul>
         <p style="font-size: var(--t-xs); color: var(--gris); margin-top: 1.25rem; max-width: 46ch;">

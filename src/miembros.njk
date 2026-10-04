@@ -68,7 +68,18 @@ descripcion: Composición multidisciplinar del Seminario Permanente y entidades 
 
   <ul class="entidades" style="margin-top: 2rem;">
     {% for entidad in entidades.citadas %}
-      <li>
+      <li{% if entidad.logotipo %} class="entidad--con-logotipo"{% endif %}>
+        {% if entidad.logotipo %}
+          <div class="entidad__marca">
+            <img
+              src="/assets/img/{{ entidad.logotipo }}"
+              alt=""
+              width="160"
+              height="80"
+              loading="lazy"
+              decoding="async">
+          </div>
+        {% endif %}
         <div>
           <span class="entidad__nombre">{{ entidad.nombre }}</span>
           <span class="entidad__ambito">{{ entidad.ambito }}</span>
@@ -80,23 +91,6 @@ descripcion: Composición multidisciplinar del Seminario Permanente y entidades 
 </div>
 
 <div class="contenedor seccion">
-  <div class="aviso">
-    <h3>Logotipos y emblemas institucionales</h3>
-    <p>
-      Esta web no reproduce escudos, logotipos ni marcas de las entidades mencionadas. Solo se
-      incorporarán aquellos cuyo uso haya sido expresamente autorizado por su titular, y en los
-      términos que esa autorización establezca.
-    </p>
-    <p>
-      Una vez obtenida la autorización, el archivo se deposita en
-      <code>src/assets/img/entidades/</code> y se indica su ruta en
-      <code>src/_datos/entidades.json</code>. El procedimiento está descrito en el archivo
-      <code>docs/guia-contenidos.md</code> del repositorio.
-    </p>
-  </div>
-</div>
-
-<div class="contenedor">
   <div class="prosa">
     <h2>Incorporarse al Seminario</h2>
     <p>

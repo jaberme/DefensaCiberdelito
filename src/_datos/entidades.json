@@ -5,37 +5,37 @@
       "nombre": "Universidad de Almería",
       "ambito": "Universidad",
       "papel": "Institución desde la que se impulsa el Seminario, según el manifiesto fundacional.",
-      "logotipo": null
+      "logotipo": "entidades/universidad-de-almeria.png"
     },
     {
       "nombre": "Comisaría Provincial de Policía Nacional en Almería",
       "ambito": "Fuerzas y Cuerpos de Seguridad del Estado",
       "papel": "Citada en el manifiesto entre las entidades que cooperan en la iniciativa.",
-      "logotipo": null
+      "logotipo": "entidades/policia-nacional.png"
     },
     {
       "nombre": "Guardia Civil",
       "ambito": "Fuerzas y Cuerpos de Seguridad del Estado",
       "papel": "Citada en el manifiesto entre las entidades que cooperan en la iniciativa.",
-      "logotipo": null
+      "logotipo": "entidades/guardia-civil.jpeg"
     },
     {
       "nombre": "Diputación Provincial de Almería",
       "ambito": "Administración pública",
       "papel": "Citada en el manifiesto entre las entidades que cooperan en la iniciativa.",
-      "logotipo": null
+      "logotipo": "entidades/diputacion-de-almeria.png"
     },
     {
       "nombre": "Cosentino",
       "ambito": "Empresa",
       "papel": "Citada en el manifiesto entre las entidades que cooperan en la iniciativa.",
-      "logotipo": null
+      "logotipo": "entidades/cosentino.png"
     },
     {
       "nombre": "Europol",
       "ambito": "Organismo internacional",
       "papel": "El manifiesto la menciona al describir la cooperación en el marco de las Jornadas.",
-      "logotipo": null
+      "logotipo": "entidades/europol.png"
     }
   ],
   "instruccionesLogotipo": "Para incorporar el logotipo de una entidad: (1) obtén la autorización expresa de uso; (2) guarda el archivo en src/assets/img/entidades/ con un nombre en minúsculas y sin acentos, por ejemplo universidad-de-almeria.svg; (3) escribe esa misma ruta relativa en el campo «logotipo» de este archivo, por ejemplo \"entidades/universidad-de-almeria.svg\". Mientras el campo valga null, la web muestra únicamente la denominación en texto, que es el tratamiento correcto si no hay autorización."

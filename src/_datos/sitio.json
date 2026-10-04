@@ -8,9 +8,7 @@
   "localidad": "Almería",
   "ejes": ["Conocimiento", "Cooperación", "Servicio público"],
   "contacto": {
-    "correo": null,
-    "marcadorCorreo": "[CORREO DE CONTACTO INSTITUCIONAL]",
-    "nota": "Cuando la dirección institucional esté disponible, escríbela en el campo «correo» de este archivo. La web pasará automáticamente de mostrar el marcador a mostrar un enlace de correo operativo."
+    "correo": "cybersec@ual.es"
   },
   "redes": []
 }

@@ -1,7 +1,7 @@
 # Información pendiente de confirmar
 
 Relación generada automáticamente con `npm run pendientes -- --markdown`.
-Última generación: 2026-09-20.
+Última generación: 2026-10-04.
 
 Cada entrada es un dato que la web muestra resaltado como provisional. Para
 cerrarlo, sustituye el marcador por el valor real en los archivos indicados.
@@ -9,10 +9,7 @@ cerrarlo, sustituye el marcador por el valor real en los archivos indicados.
 | Dato pendiente | Dónde se escribe |
 |---|---|
 | `[CARGO]` | `src/miembros.njk:59` |
-| `[CORREO DE CONTACTO INSTITUCIONAL]` | `src/_datos/sitio.json:12`<br>`src/aviso-legal.md:15` |
-| `[DOMICILIO]` | `src/aviso-legal.md:14` |
 | `[ENTIDAD DE PROCEDENCIA]` | `src/miembros.njk:59` |
 | `[ENTIDAD REVISORA]` | `src/accesibilidad.md:18` |
-| `[ENTIDAD TITULAR DEL SITIO]` | `src/aviso-legal.md:14` |
 | `[FECHA DE LA REVISIÓN DE ACCESIBILIDAD]` | `src/accesibilidad.md:17` |
 | `[NOMBRE]` | `src/miembros.njk:59` |

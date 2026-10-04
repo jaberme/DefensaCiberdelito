@@ -11,11 +11,9 @@ descripcion: Aviso legal, condiciones de uso y política de privacidad de la web
 
 Esta web recoge la actividad del Seminario Permanente «Seguridad Nacional, Sociedad Digital y
 Ciberdelito». La titularidad del sitio y la responsabilidad editorial de sus contenidos
-corresponden a [ENTIDAD TITULAR DEL SITIO], con domicilio en [DOMICILIO] y dirección de
-contacto [CORREO DE CONTACTO INSTITUCIONAL].
-
-Estos datos deben completarse antes de dar difusión pública a la web. Hasta entonces, el sitio
-debe entenderse como una publicación en preparación.
+corresponden a la Universidad de Almería, con domicilio en Carretera de Sacramento S/N, La
+Cañada, Almería, 04120, y dirección de contacto
+[cybersec@ual.es](mailto:cybersec@ual.es).
 
 ## Datos personales
 

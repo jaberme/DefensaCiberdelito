@@ -768,6 +768,22 @@ hr {
 
 .sin-margen { margin-bottom: 0; }
 
+/* --- Vídeo en noticias -------------------------------------------------- */
+.video { margin-block: var(--e-6); }
+
+.video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+
+.video figcaption {
+  margin-top: var(--e-2);
+  color: var(--gris);
+  font-size: var(--t-s);
+}
+
 /* --- Adaptacion a pantallas pequenas ------------------------------------ */
 @media (max-width: 62rem) {
   .pie__rejilla { grid-template-columns: 1fr 1fr; }

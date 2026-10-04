@@ -12,5 +12,5 @@ cerrarlo, sustituye el marcador por el valor real en los archivos indicados.
 | `[ENTIDAD DE PROCEDENCIA]` | `src/miembros.njk:59` |
 | `[ENTIDAD REVISORA]` | `src/accesibilidad.md:18` |
 | `[FECHA DE LA REVISIÓN DE ACCESIBILIDAD]` | `src/accesibilidad.md:17` |
-| `[FECHA POR DETERMINAR]` | `src/contenido/noticias/ctf-ciberseguridad-ia.md:79` |
+| `[FECHA POR DETERMINAR]` | `src/contenido/noticias/ctf-ciberseguridad-ia.md:81` |
 | `[NOMBRE]` | `src/miembros.njk:59` |

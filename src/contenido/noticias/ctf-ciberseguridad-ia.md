@@ -15,6 +15,8 @@ El encuentro en la UAL permitirá que los participantes conozcan el funcionamien
 
 Cada equipo trabajará con un entorno aislado basado en **Kali Linux**, equipado con herramientas habituales de análisis y pentesting, y podrá utilizar modelos de lenguaje abiertos ejecutados en infraestructura europea. El agente deberá interpretar el reto, decidir qué pasos seguir, seleccionar y ejecutar herramientas, analizar los resultados obtenidos y modificar su estrategia hasta conseguir resolver el desafío. El ciclo de trabajo se convierte así en un proceso continuo de **razonamiento, ejecución, observación y aprendizaje**.
 
+## Ver el vídeo
+
 <figure class="video">
   <video
     controls

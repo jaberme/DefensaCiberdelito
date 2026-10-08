@@ -117,6 +117,15 @@ export default function (eleventyConfig) {
     api.getFilteredByGlob("src/contenido/actividades/*.md").reverse(),
   );
 
+  // Actividades que se muestran en la portada: las que llevan «destacada: true»
+  // en su ficha. Para retirar una de la portada basta con quitar esa linea.
+  eleventyConfig.addCollection("destacadas", (api) =>
+    api
+      .getFilteredByGlob("src/contenido/actividades/*.md")
+      .filter((item) => item.data.destacada === true)
+      .reverse(),
+  );
+
   // Las ediciones de las Jornadas se ordenan por el campo «orden» de su ficha,
   // que es numerico. El campo «anio» se reserva para mostrarlo en pantalla y
   // admite un marcador de texto mientras la fecha no este confirmada.

@@ -18,6 +18,10 @@ periodo: "2026"
 lugar: "[LUGAR POR CONFIRMAR]"
 promueve: "Seminario Permanente"
 dirigidoA: "Profesionales, estudiantes y público general"
+
+# Pon «true» para mostrarla también en la portada (máximo tres). Borra la
+# línea para retirarla de la portada sin tocar nada más.
+destacada: false
 ---
 
 Descripción de la actividad: qué se va a hacer, por qué y qué se espera de ella.

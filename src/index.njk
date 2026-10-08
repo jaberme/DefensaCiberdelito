@@ -120,7 +120,34 @@ descripcion: Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciber
   </div>
 </section>
 
+{% set destacadas = collections.destacadas %}
+{% if destacadas.length %}
 <section class="seccion seccion--tinte">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <h2>Actividades destacadas</h2>
+      <a href="/actividades/">Todas las actividades y proyectos</a>
+    </div>
+
+    <ul class="registro">
+      {% for actividad in destacadas | limitar(3) %}
+        <li>
+          <div class="registro__fila">
+            <span class="registro__periodo">{{ actividad.data.periodo }}</span>
+            <div>
+              <h3 class="registro__titulo"><a href="{{ actividad.url }}">{{ actividad.data.titulo }}</a></h3>
+              <p class="registro__resumen">{{ actividad.data.entrada }}</p>
+            </div>
+            <span class="estado estado--{{ actividad.data.estado }}">{{ estados.actividad[actividad.data.estado].etiqueta }}</span>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+<section class="seccion{% if not destacadas.length %} seccion--tinte{% endif %}">
   <div class="contenedor">
     <div class="cabecera-seccion">
       <h2>Quiénes participan</h2>
@@ -167,7 +194,7 @@ descripcion: Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciber
   </div>
 </section>
 
-<section class="seccion">
+<section class="seccion{% if destacadas.length %} seccion--tinte{% endif %}">
   <div class="contenedor">
     <div class="cabecera-seccion">
       <h2>Actualidad</h2>
@@ -194,7 +221,7 @@ descripcion: Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciber
   </div>
 </section>
 
-<section class="seccion seccion--tinte">
+<section class="seccion{% if not destacadas.length %} seccion--tinte{% endif %}">
   <div class="contenedor">
     <div class="rejilla rejilla--dos">
       <div class="prosa">

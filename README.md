@@ -138,6 +138,9 @@ La noticia aparece sola en la portada, en `Actualidad`, en el mapa del sitio y e
 2. Elige el campo `estado`: `realizada`, `programada` o `propuesta`. Determina en qué grupo se
    muestra y con qué marcador. **Usa `propuesta` mientras la actividad no esté confirmada**: la
    web deja claro que es una iniciativa en estudio y no un compromiso adquirido.
+3. Si quieres que aparezca en la portada, añade `destacada: true` a la ficha. La portada
+   muestra como máximo tres destacadas, en una sección que solo existe mientras haya alguna.
+   Para retirarla de la portada basta con borrar esa línea.
 
 ## Abrir una nueva edición de las Jornadas
 

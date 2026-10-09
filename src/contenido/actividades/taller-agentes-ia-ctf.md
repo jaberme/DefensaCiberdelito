@@ -2,11 +2,11 @@
 titulo: Taller de creación de agentes de IA para ciberseguridad
 entrada: Actividad práctica para aprender a crear agentes capaces de resolver retos de seguridad informática.
 descripcion: Taller universitario sobre inteligencia artificial, ciberseguridad y retos Capture the Flag.
-date: 2026-11-20
+date: 2026-11-30
 
 estado: programada
-periodo: "Noviembre de 2026"
-lugar: "Universidad de Almería"
+periodo: "Lunes 30 de noviembre de 2026, de 16:00 a 17:30"
+lugar: "Universidad de Almería. El aula se comunicará por correo electrónico a las personas inscritas."
 promueve: "Seminario Permanente: Seguridad Nacional, Sociedad Digital y Ciberdelito"
 dirigidoA: "Estudiantes universitarios y personas interesadas en ciberseguridad e inteligencia artificial"
 ---

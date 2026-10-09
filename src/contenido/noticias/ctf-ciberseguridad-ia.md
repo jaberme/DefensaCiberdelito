@@ -73,10 +73,10 @@ Con esta actividad, la Universidad de Almería ofrece a sus estudiantes la posib
 ## Datos prácticos
 
 - **Evento:** ACDX – Automated Cyber Defence Challenge
-- **Lugar:** Universidad de Almería
+- **Lugar:** Universidad de Almería. El aula se comunicará por correo electrónico a las personas inscritas.
 - **Formato:** CTF universitario basado en agentes autónomos de inteligencia artificial
 - **Áreas:** Ciberseguridad, inteligencia artificial, pentesting, automatización, criptografía, seguridad web e ingeniería inversa
 - **Participación:** Por equipos
 - **Curso académico:** 2026-2027
-- **Fecha y horario en la UAL:** Última semana de noviembre (más detalle próximamente).
+- **Fecha y horario en la UAL:** Lunes 30 de noviembre de 2026, de 16:00 a 17:30.
 - **Inscripción:** INSCRIPCIÓN CERRADA

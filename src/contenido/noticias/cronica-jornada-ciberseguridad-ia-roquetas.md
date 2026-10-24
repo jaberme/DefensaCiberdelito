@@ -75,9 +75,11 @@ del COIT AORM. En ella intervinieron:
   Almería, miembro del Seminario Permanente.
 - **Teniente Pedro Marín Mora**, jefe de la Sección de Patrimonio (Equipo EDITE y Arroba) de la
   Comandancia de la Guardia Civil de Almería.
+- **Juan Soler**, del Equipo @ de la Guardia Civil.
 - **Antonio Jesús González García**, jefe del Servicio de Infraestructura Tecnológica, Seguridad
   y Atención a Usuarios (SITSAU) de la Diputación Provincial de Almería.
 - **Florentina Fernández**, de la Cámara de Comercio de Almería.
+- **Antonio Pérez Seronellas**, de Telefónica Tech.
 
 El debate puso frente a frente las dos caras de la inteligencia artificial: la que multiplica la
 capacidad de quien ataca y la que permite detectar y responder antes y mejor. Universidad,

@@ -4,7 +4,7 @@ entrada: Jornada organizada por el Ayuntamiento de Roquetas de Mar.
 descripcion: En esta jornada se tratará el reto de enfrentarse a amenazas como el pertinaz Ransomware, ser capaces de atisbar nuevas (y desconocidas) amenazas hasta la fecha, saber cómo protegerse, a quien recurrir, etc.
 date: 2026-10-22
 
-estado: programada
+estado: realizada
 periodo: "Octubre de 2026"
 lugar: "Edificio Polivalente El Puerto, Roquetas de Mar (Almería)"
 promueve: "Ayuntamiento de Roquetas de Mar"

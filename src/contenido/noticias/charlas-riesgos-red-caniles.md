@@ -79,7 +79,7 @@ sesión o de la instalación de una herramienta de control.
 ## Datos prácticos
 
 - **Fecha:** 27 de octubre de 2027.
-- **Localidad:** Caniles. El espacio concreto de celebración está pendiente de confirmación.
+- **Lugar:** Colegio Juan XX III, Caniles.
 - **Sesión infantil:** 12:00, dirigida al alumnado de 5.º y 6.º.
 - **Sesión para padres y madres:** 19:00. El cartel recomienda llegar sobre las 18:40.
 - **Organiza:** AMPA Nuestra Esperanza.

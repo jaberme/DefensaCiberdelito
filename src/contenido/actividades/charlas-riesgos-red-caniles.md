@@ -4,8 +4,8 @@ entrada: "Dos sesiones para aprender a reconocer los riesgos de la red y actuar 
 descripcion: "Actividad en Caniles el 27 de octubre de 2027, organizada por el AMPA Nuestra Esperanza, con charlas de José Antonio Álvarez Bermejo para escolares a las 12:00 y familias a las 19:00."
 date: 2027-10-27
 estado: programada
-periodo: "27 de octubre de 2027 · Alumnado: 12:00 · Familias: 19:00"
-lugar: "Caniles · [ESPACIO POR CONFIRMAR]"
+periodo: "Martes 27/10/2027"
+lugar: "Colegio Juan XX III, Caniles"
 promueve: "AMPA Nuestra Esperanza"
 dirigidoA: "Alumnado de 5.º y 6.º, padres y madres"
 ---
@@ -51,7 +51,7 @@ pensar antes de compartir y mantener abierta la posibilidad de pedir ayuda**.
 
 ## Lugar y participación
 
-Las sesiones se celebrarán en **Caniles**. El espacio concreto está **[ESPACIO POR CONFIRMAR]**.
+Las sesiones se celebrarán en el **Colegio Juan XX III de Caniles**.
 La información disponible no especifica un procedimiento de inscripción.
 
 La [noticia sobre las charlas](/actualidad/charlas-riesgos-red-caniles/) amplía el contexto de la

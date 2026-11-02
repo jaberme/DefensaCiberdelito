@@ -67,3 +67,20 @@ en pantallas de alta densidad.
 
 Mientras no existan, la web funciona correctamente: las entidades se muestran con su
 denominación en texto, que es el tratamiento adecuado cuando no hay autorización.
+
+## Reportaje de Canal Sur sobre la agroindustria (2 de noviembre de 2026)
+
+La noticia `src/contenido/noticias/canal-sur-ciberseguridad-agroindustria.md` recoge la
+intervención de José Antonio Álvarez Bermejo a petición del participante. La fuente es la
+[publicación de Canal Sur](https://www.canalsur.es/noticias/andalucia/almeria/ocho-diez-empresas-agroindustria-almeriense_1_1449129.html).
+El vídeo de 79 segundos procede de la emisión HLS enlazada en los metadatos públicos de esa
+página; se ha convertido a MP4 a 720p para reducir su peso, conservando el metraje y el audio
+completos. El vídeo y su imagen de
+portada conservan la atribución a Canal Sur y un enlace a la publicación original.
+
+La ampliación de contexto enlaza las informaciones de Agra/AFP, Euronews, WDR/Tagesschau y
+la alerta oficial CERTFR-2026-ALE-012, consultadas el 2 de noviembre de 2026. Se utiliza la
+fecha contrastada del incidente francés (noche del 11 al 12 de octubre), y se distingue el
+incidente belga (noche del 1 al 2 de noviembre) del riesgo señalado en Alemania, donde las
+fuentes consultadas no confirman un ataque equivalente esa noche. Los datos del Seminario y
+de las III Jornadas proceden de sus páginas en este sitio.

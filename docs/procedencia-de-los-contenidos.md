@@ -84,3 +84,17 @@ fecha contrastada del incidente francés (noche del 11 al 12 de octubre), y se d
 incidente belga (noche del 1 al 2 de noviembre) del riesgo señalado en Alemania, donde las
 fuentes consultadas no confirman un ataque equivalente esa noche. Los datos del Seminario y
 de las III Jornadas proceden de sus páginas en este sitio.
+
+## Entrevista de La Voz de Almería (11 de noviembre de 2026)
+
+La noticia `src/contenido/noticias/la-voz-riesgos-digitales-empresas.md` es una redacción propia
+basada en la entrevista de Alberto Godoy a José Antonio Álvarez Bermejo publicada por La Voz de
+Almería el 11 de noviembre de 2026 y actualizada el día 12. Resume sus principales asuntos sin
+reproducir el texto del periódico: exposición de los dispositivos conectados, riesgos para la
+agroindustria y la cadena de suministro, fraude mediante correo corporativo, daño reputacional y
+medidas de prevención.
+
+El PDF facilitado para la publicación se conserva en
+`src/assets/documentos/la-voz-de-almeria-empresas-ciberataques.pdf` y se ofrece desde la noticia
+con la autoría, el medio y las fechas indicados. La información sobre las III Jornadas se ha
+contrastado con su ficha en este sitio.

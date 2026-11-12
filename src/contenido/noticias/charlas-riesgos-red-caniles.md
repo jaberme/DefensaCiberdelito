@@ -1,11 +1,11 @@
 ---
 titulo: "Caniles acogerá dos charlas para aprender a cuidarse en la red, dirigidas a niños y familias"
-entrada: "El 27 de octubre de 2027, Caniles celebrará dos sesiones sobre el uso seguro de móviles, redes sociales y tecnología en la infancia: a las 12:00 para alumnado de 5.º y 6.º y a las 19:00 para padres y madres. Se abordará cómo actuar ante un posible abuso, una suplantación de identidad o el robo de una cuenta."
-descripcion: "Charlas en Caniles el 27 de octubre de 2027 sobre riesgos de la red y protección de la infancia, con una sesión para escolares a las 12:00 y otra para familias a las 19:00."
+entrada: "El 27 de octubre de 2026, Caniles celebrará dos sesiones sobre el uso seguro de móviles, redes sociales y tecnología en la infancia: a las 12:00 para alumnado de 5.º y 6.º y a las 19:00 para padres y madres. Se abordará cómo actuar ante un posible abuso, una suplantación de identidad o el robo de una cuenta."
+descripcion: "Charlas en Caniles el 27 de octubre de 2026 sobre riesgos de la red y protección de la infancia, con una sesión para escolares a las 12:00 y otra para familias a las 19:00."
 date: 2026-10-26
 ---
 
-**Caniles acogerá el 27 de octubre de 2027 dos charlas de concienciación sobre los riesgos de
+**Caniles acogerá el 27 de octubre de 2026 dos charlas de concienciación sobre los riesgos de
 la red**, organizadas por el **AMPA Nuestra Esperanza**. La sesión de la mañana, a las
 **12:00**, estará dirigida al alumnado de **5.º y 6.º**; por la tarde, a las **19:00**, será
 el turno de padres y madres. El ponente será **José Antonio Álvarez Bermejo**, profesor titular
@@ -78,7 +78,7 @@ sesión o de la instalación de una herramienta de control.
 
 ## Datos prácticos
 
-- **Fecha:** 27 de octubre de 2027.
+- **Fecha:** 27 de octubre de 2026.
 - **Lugar:** Colegio Juan XX III, Caniles.
 - **Sesión infantil:** 12:00, dirigida al alumnado de 5.º y 6.º.
 - **Sesión para padres y madres:** 19:00. El cartel recomienda llegar sobre las 18:40.

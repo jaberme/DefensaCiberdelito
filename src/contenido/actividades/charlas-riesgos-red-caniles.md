@@ -1,16 +1,16 @@
 ---
 titulo: "Charlas sobre uso seguro de la tecnología en la infancia en Caniles"
 entrada: "Dos sesiones para aprender a reconocer los riesgos de la red y actuar ante posibles abusos, suplantaciones de identidad o robos de cuentas: alumnado por la mañana y padres y madres por la tarde."
-descripcion: "Actividad en Caniles el 27 de octubre de 2027, organizada por el AMPA Nuestra Esperanza, con charlas de José Antonio Álvarez Bermejo para escolares a las 12:00 y familias a las 19:00."
-date: 2027-10-27
+descripcion: "Actividad en Caniles el 27 de octubre de 2026, organizada por el AMPA Nuestra Esperanza, con charlas de José Antonio Álvarez Bermejo para escolares a las 12:00 y familias a las 19:00."
+date: 2026-10-27
 estado: realizada
-periodo: "Martes 27/10/2027"
+periodo: "Martes 27/10/2026"
 lugar: "Colegio Juan XX III, Caniles"
 promueve: "AMPA Nuestra Esperanza"
 dirigidoA: "Alumnado de 5.º y 6.º, padres y madres"
 ---
 
-El **27 de octubre de 2027**, Caniles acogerá dos charlas sobre **uso seguro de móviles,
+El **27 de octubre de 2026**, Caniles acogerá dos charlas sobre **uso seguro de móviles,
 redes sociales y tecnología en la infancia**, organizadas por el **AMPA Nuestra Esperanza**.
 Las impartirá **José Antonio Álvarez Bermejo**, profesor titular de la Universidad de Almería,
 especialista en ciberseguridad e identidad digital y miembro del Seminario Permanente

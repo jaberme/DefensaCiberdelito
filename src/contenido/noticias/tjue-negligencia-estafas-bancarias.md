@@ -1,5 +1,5 @@
 ---
-titulo: "«Fue negligencia tuya» ya no basta: el Tribunal de Justicia de la Unión Europea refuerza tu derecho al reembolso ante las estafas bancarias"
+titulo: "\"Fue negligencia tuya\" ya no basta: el Tribunal de Justicia de la Unión Europea refuerza tu derecho al reembolso ante las estafas bancarias"
 entrada: "Juan Francisco Gómez, miembro del Grupo Sexto (Ciberdelitos) de Policía Nacional y del Seminario Permanente, analiza el derecho al reembolso de los pagos no autorizados y las medidas que pueden adoptar las víctimas de estafas bancarias."
 descripcion: "Análisis de Juan Francisco Gómez sobre la sentencia del TJUE en el asunto C-70/25, la negligencia grave y el reembolso de pagos no autorizados."
 date: 2026-11-15
@@ -31,7 +31,7 @@ Por lo tanto, que una víctima haya facilitado sus claves como consecuencia de u
 
 En España, estas obligaciones están recogidas en el Real Decreto-ley 19/2018, de servicios de pago. Su artículo 45 establece la devolución inmediata de las operaciones no autorizadas y concreta que, si la entidad tiene motivos razonables para sospechar fraude, debe comunicarlos por escrito al Banco de España. La sentencia europea aclara cómo debe interpretarse esta obligación: alegar negligencia grave del cliente no permite al banco aplazar el reembolso mientras se discute quién debe asumir finalmente la pérdida.
 
-Hay otra regla que conviene conocer: que una operación se haya realizado utilizando las claves del cliente no demuestra, por sí solo, que este la autorizara ni que actuara con negligencia grave. El artículo 44 del mismo real decreto-ley exige al proveedor aportar pruebas para acreditar el fraude o la negligencia grave del usuario. Por eso, una respuesta del tipo «se utilizaron sus claves» no basta para resolver la reclamación: es necesario analizar cómo se obtuvieron y utilizaron esas credenciales y qué ocurrió realmente durante el engaño.
+Hay otra regla que conviene conocer: que una operación se haya realizado utilizando las claves del cliente no demuestra, por sí solo, que este la autorizara ni que actuara con negligencia grave. El artículo 44 del mismo real decreto-ley exige al proveedor aportar pruebas para acreditar el fraude o la negligencia grave del usuario. Por eso, una respuesta del tipo "se utilizaron sus claves" no basta para resolver la reclamación: es necesario analizar cómo se obtuvieron y utilizaron esas credenciales y qué ocurrió realmente durante el engaño.
 
 La consecuencia es importante: el banco no puede limitarse a atribuir negligencia al cliente y dejar que sea este quien acuda a los tribunales para recuperar su dinero. Debe efectuar primero el reembolso y, si considera que el cliente debe asumir finalmente la pérdida, reclamar después y demostrar los motivos.
 
@@ -43,7 +43,7 @@ En una operación no autorizada, un tercero puede haber usado credenciales obten
 
 La devolución inmediata prevista para pagos no autorizados no se extiende automáticamente a este segundo escenario. Habrá que examinar el consentimiento, el funcionamiento del servicio y las obligaciones que correspondían a cada interviniente. El Banco de España recomienda comunicar cuanto antes estos fraudes para intentar recuperar los fondos.
 
-Tampoco basta con decir que el afectado es «una pyme». El artículo 34 permite ciertos pactos para usuarios que no sean consumidores ni microempresas; no incluye el artículo 45 entre las exclusiones generales. Además, para usuarios no consumidores puede pactarse otro plazo de notificación. Hay que revisar el contrato concreto.
+Tampoco basta con decir que el afectado es "una pyme". El artículo 34 permite ciertos pactos para usuarios que no sean consumidores ni microempresas; no incluye el artículo 45 entre las exclusiones generales. Además, para usuarios no consumidores puede pactarse otro plazo de notificación. Hay que revisar el contrato concreto.
 
 La utilidad de un análisis técnico está precisamente ahí: documentar quién accedió, qué instrucciones recibió la víctima, qué operación se mostró y cómo se confirmó.
 

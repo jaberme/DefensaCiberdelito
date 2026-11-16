@@ -1,5 +1,18 @@
 # Procedencia de los contenidos
 
+## La función de seguridad y la estrategia de negocio (16 de noviembre de 2026)
+
+La noticia `src/contenido/noticias/funcion-seguridad-estrategia-negocio.md` reproduce
+el texto íntegro del artículo de Francisco Torrecillas Gilabert,
+publicado originalmente en LinkedIn el 16 de febrero de 2025. Se conserva su redacción
+y se añaden encabezados, negritas y listas. La atribución incluye su cargo de Networking
+& Communications Manager en Cosentino Group - Grupo Cosentino y su pertenencia al
+Seminario Permanente.
+
+El esquema de los planes estratégicos, tácticos y operativos es la imagen `tclla.jpeg`,
+copiada sin modificaciones. Las dos fotografías ilustrativas
+son escenas ficticias generadas con IA y se identifican como tales en sus pies de imagen.
+
 Este documento deja constancia de qué textos del sitio son documentos originales del Seminario,
 cuáles se han redactado para la web y qué queda pendiente de verificar. Conviene revisarlo antes
 de dar difusión pública al sitio.

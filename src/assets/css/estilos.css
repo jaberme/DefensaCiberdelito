@@ -768,6 +768,23 @@ hr {
 
 .sin-margen { margin-bottom: 0; }
 
+/* --- Imágenes del artículo sobre seguridad y estrategia ----------------- */
+.noticia-seguridad__figura {
+  margin: var(--e-6) 0;
+}
+
+.noticia-seguridad__figura img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.noticia-seguridad__figura figcaption {
+  margin-top: var(--e-2);
+  color: var(--gris);
+  font-size: var(--t-s);
+}
+
 /* --- Vídeo en noticias -------------------------------------------------- */
 .video {
   width: min(100%, 40rem);

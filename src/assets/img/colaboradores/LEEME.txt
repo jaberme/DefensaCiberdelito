@@ -1,0 +1,5 @@
+Fotografías autorizadas para las fichas de colaboradores.
+
+Usa archivos JPG, PNG o WebP, preferiblemente cuadrados, con un tamaño aproximado de
+800 × 800 píxeles y un peso razonable. Nombra los archivos en minúsculas, sin acentos
+y con guiones, por ejemplo: nombre-apellidos.jpg.

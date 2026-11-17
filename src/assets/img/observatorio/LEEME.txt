@@ -1,0 +1,5 @@
+Imágenes de las contribuciones del Observatorio.
+
+Redúcelas a un máximo de 1.600 píxeles de ancho, utiliza una compresión razonable y
+documenta siempre su autoría o procedencia. Toda imagen informativa debe llevar un texto
+alternativo que describa su contenido.

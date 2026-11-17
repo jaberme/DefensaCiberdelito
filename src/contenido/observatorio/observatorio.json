@@ -1,0 +1,4 @@
+{
+  "layout": "contribucion.njk",
+  "permalink": "/observatorio/{{ page.fileSlug }}/"
+}

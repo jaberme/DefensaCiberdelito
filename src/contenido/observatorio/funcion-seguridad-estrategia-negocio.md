@@ -3,9 +3,13 @@ titulo: "La función de seguridad y la estrategia de negocio"
 entrada: "Francisco Torrecillas Gilabert, Networking & Communications Manager en Cosentino Group - Grupo Cosentino y miembro del Seminario Permanente, aborda la relación entre la gestión de la seguridad y los objetivos del negocio."
 descripcion: "Una publicación de Francisco Torrecillas Gilabert, miembro del Seminario Permanente, sobre seguridad, gobernanza y estrategia de negocio."
 date: 2026-11-16
+tipo: Artículo
+autor:
+  nombre: Francisco Torrecillas Gilabert
+  vinculacion: miembro
+  perfil: Networking & Communications Manager en Cosentino Group - Grupo Cosentino.
+imagen: /assets/img/noticias/seguridad-estrategia-direccion.jpg
 ---
-
-**Artículo de Francisco Torrecillas Gilabert**, Networking & Communications Manager en Cosentino Group - Grupo Cosentino y miembro del Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciberdelito».
 
 Publicado originalmente el **16 de febrero de 2025** en LinkedIn: [La función de seguridad y la estrategia de negocio](https://www.linkedin.com/pulse/la-funci%C3%B3n-de-seguridad-y-estrategia-negocio-torrecillas-gilabert-87kpf/).
 

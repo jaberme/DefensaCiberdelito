@@ -1,0 +1,30 @@
+---
+layout: base.njk
+tipoSocial: article
+---
+<div class="contenedor contenedor--lectura">
+  <div class="titular">
+    <p class="titular__categoria">Observatorio · {{ tipo }}</p>
+    <h1>{{ titulo }}</h1>
+    <p class="titular__entrada">{{ entrada }}</p>
+  </div>
+</div>
+
+<div class="contenedor contenedor--lectura">
+  <article class="texto contribucion">
+    <div class="contribucion__autoria">
+      <p class="contribucion__autor">{{ autor.nombre }}</p>
+      {% if autor.perfil %}<p class="contribucion__perfil">{{ autor.perfil }}</p>{% endif %}
+      <p class="contribucion__datos">
+        <span>{{ "Miembro" if autor.vinculacion == "miembro" else "Colaborador/a" }} del Seminario</span>
+        <span aria-hidden="true">·</span>
+        <time datetime="{{ page.date | fechaISO }}">{{ page.date | fechaLarga }}</time>
+      </p>
+    </div>
+
+    {{ content | safe }}
+
+    <hr>
+    <p><a href="/observatorio/">Volver al Observatorio</a></p>
+  </article>
+</div>

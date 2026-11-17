@@ -3,9 +3,13 @@ titulo: "\"Fue negligencia tuya\" ya no basta: el Tribunal de Justicia de la Uni
 entrada: "Juan Francisco Gómez, miembro del Grupo Sexto (Ciberdelitos) de Policía Nacional y del Seminario Permanente, analiza el derecho al reembolso de los pagos no autorizados y las medidas que pueden adoptar las víctimas de estafas bancarias."
 descripcion: "Análisis de Juan Francisco Gómez sobre la sentencia del TJUE en el asunto C-70/25, la negligencia grave y el reembolso de pagos no autorizados."
 date: 2026-11-15
+tipo: Análisis
+autor:
+  nombre: Juan Francisco Gómez
+  vinculacion: miembro
+  perfil: Grupo Sexto (Ciberdelitos) de Policía Nacional.
+imagen: /assets/img/noticias/tjue-negligencia.png
 ---
-
-**Por Juan Francisco Gómez**, miembro del Grupo Sexto (Ciberdelitos) de Policía Nacional y miembro del Seminario Permanente.
 
 Puedes seguir esta publicación en el [perfil de LinkedIn de Juan Francisco Gómez](https://www.linkedin.com/pulse/fue-negligencia-tuya-ya-sirve-qu%C3%A9-cambia-para-los-y-las-g%C3%B3mez-njohe/).
 

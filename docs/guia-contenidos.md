@@ -20,6 +20,8 @@ el cambio. El sitio se vuelve a publicar solo.
 | Aviso legal | `src/aviso-legal.md` |
 | Declaración de accesibilidad | `src/accesibilidad.md` |
 | Noticias | `src/contenido/noticias/` |
+| Contribuciones del Observatorio | `src/contenido/observatorio/` |
+| Perfiles de colaboradores | `src/_datos/colaboradores.json` |
 | Actividades y proyectos | `src/contenido/actividades/` |
 | Ediciones de las Jornadas | `src/contenido/jornadas/` |
 
@@ -87,6 +89,46 @@ cuanto el array deje de estar vacío, el aviso desaparece y la web muestra la re
 por ámbito.
 
 **Antes de publicar un nombre, asegúrate de contar con la conformidad de esa persona.**
+
+## Publicar una contribución en el Observatorio
+
+1. Copia `plantillas/contribucion-observatorio.md` a `src/contenido/observatorio/`.
+2. Renombra el archivo con minúsculas, sin acentos y con guiones. Ese nombre formará parte de
+   su dirección, por ejemplo `guia-respuesta-incidentes.md`.
+3. Rellena el título, resumen, fecha y tipo (`Artículo`, `Manual`, `Análisis`, etc.).
+4. Identifica al autor en el bloque `autor`. `vinculacion` solo admite `miembro` o
+   `colaborador`; el sitio no compila si falta el nombre o se escribe otro valor.
+5. Escribe el texto y añade las imágenes necesarias. Puedes guardar estas últimas en
+   `src/assets/img/observatorio/`.
+
+El modelo contiene un ejemplo de imagen con texto alternativo y pie. La contribución aparecerá
+automáticamente en la portada, en el índice del Observatorio y en el mapa del sitio.
+
+## Publicar una ficha de colaborador
+
+Las fichas se editan en `src/_datos/colaboradores.json`. Añade un objeto por persona:
+
+```json
+"listado": [
+  {
+    "nombre": "Nombre y apellidos",
+    "cargo": "Cargo o especialidad",
+    "entidad": "Entidad profesional",
+    "perfil": "Resumen profesional breve, escrito en tercera persona.",
+    "fotografia": "colaboradores/nombre-apellidos.jpg",
+    "fotografiaAlt": "Retrato de Nombre y apellidos.",
+    "linkedin": "https://www.linkedin.com/in/perfil/",
+    "web": "https://sitio-profesional.example/"
+  }
+]
+```
+
+Guarda la fotografía, debidamente autorizada, en `src/assets/img/colaboradores/`. Si la persona
+no facilita LinkedIn, escribe `"linkedin": null`: la ficha mantendrá el icono visible en gris y
+lo anunciará como no disponible. La web profesional sigue la misma convención cuando no existe.
+
+**No publiques una ficha sin el consentimiento expreso de la persona para mostrar su nombre,
+fotografía, trayectoria y enlaces.**
 
 ## Incorporar el logotipo de una entidad
 

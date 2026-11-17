@@ -1,0 +1,51 @@
+---
+layout: base.njk
+permalink: /observatorio/
+titulo: Observatorio
+descripcion: Artículos, análisis, manuales y otros recursos elaborados por miembros y colaboradores del Seminario Permanente.
+---
+<div class="contenedor">
+  <div class="titular">
+    <p class="titular__categoria">Conocimiento compartido</p>
+    <h1>Observatorio</h1>
+    <p class="titular__entrada">
+      Artículos, análisis, manuales y otros recursos en los que miembros y colaboradores del
+      Seminario comparten conocimiento útil para la comunidad.
+    </p>
+  </div>
+</div>
+
+<div class="contenedor">
+  {% if collections.observatorio.length %}
+    <ul class="lista-observatorio">
+      {% for contribucion in collections.observatorio %}
+        <li>
+          <article class="contribucion-resumen{% if contribucion.data.imagen %} contribucion-resumen--con-imagen{% endif %}">
+            {% if contribucion.data.imagen %}
+              <a class="contribucion-resumen__imagen" href="{{ contribucion.url }}" tabindex="-1" aria-hidden="true">
+                <img src="{{ contribucion.data.imagen }}" alt="" width="640" height="360" loading="lazy" decoding="async">
+              </a>
+            {% endif %}
+            <div>
+              <p class="contribucion-resumen__tipo">{{ contribucion.data.tipo }}</p>
+              <h2><a href="{{ contribucion.url }}">{{ contribucion.data.titulo }}</a></h2>
+              <p class="contribucion-resumen__entrada">{{ contribucion.data.entrada }}</p>
+              <p class="contribucion-resumen__firma">
+                <span>{{ contribucion.data.autor.nombre }}</span>
+                <span aria-hidden="true">·</span>
+                {{ "Miembro" if contribucion.data.autor.vinculacion == "miembro" else "Colaborador/a" }} del Seminario
+                <span aria-hidden="true">·</span>
+                <time datetime="{{ contribucion.date | fechaISO }}">{{ contribucion.date | fechaLarga }}</time>
+              </p>
+            </div>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="vacio">
+      <h2>Todavía no hay contribuciones</h2>
+      <p>Los artículos, manuales y recursos de miembros y colaboradores aparecerán aquí.</p>
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,5 @@
+{
+  "introduccion": "Profesionales que colaboran de forma desinteresada con el Seminario, aportando conocimiento y experiencia a sus actividades, publicaciones y proyectos.",
+  "listado": [],
+  "instruccionesListado": "Añade una ficha solo cuando la persona haya autorizado la publicación de su nombre, fotografía y perfil. Cada objeto debe incluir nombre, cargo, entidad, perfil, fotografia, fotografiaAlt, linkedin y web. Usa null en linkedin cuando no haya facilitado ese enlace; la ficha mostrará entonces su icono en gris."
+}

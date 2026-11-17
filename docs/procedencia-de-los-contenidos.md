@@ -2,7 +2,8 @@
 
 ## La función de seguridad y la estrategia de negocio (16 de noviembre de 2026)
 
-La noticia `src/contenido/noticias/funcion-seguridad-estrategia-negocio.md` reproduce
+La contribución del Observatorio
+`src/contenido/observatorio/funcion-seguridad-estrategia-negocio.md` reproduce
 el texto íntegro del artículo de Francisco Torrecillas Gilabert,
 publicado originalmente en LinkedIn el 16 de febrero de 2025. Se conserva su redacción
 y se añaden encabezados, negritas y listas. La atribución incluye su cargo de Networking

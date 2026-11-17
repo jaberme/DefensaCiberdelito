@@ -5,6 +5,8 @@
     { "texto": "Miembros", "url": "/miembros/" },
     { "texto": "Jornadas", "url": "/jornadas/" },
     { "texto": "Actividades", "url": "/actividades/" },
+    { "texto": "Observatorio", "url": "/observatorio/" },
+    { "texto": "Colaboradores", "url": "/colaboradores/" },
     { "texto": "Actualidad", "url": "/actualidad/" },
     { "texto": "Contacto", "url": "/contacto/" }
   ],

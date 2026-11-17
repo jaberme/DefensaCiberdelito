@@ -113,6 +113,28 @@ export default function (eleventyConfig) {
     api.getFilteredByGlob("src/contenido/noticias/*.md").reverse(),
   );
 
+  // El Observatorio solo admite contribuciones firmadas por una persona que
+  // conste como miembro o colaboradora del Seminario. La validacion evita que
+  // una ficha incompleta llegue a publicarse por error.
+  eleventyConfig.addCollection("observatorio", (api) => {
+    const contribuciones = api
+      .getFilteredByGlob("src/contenido/observatorio/*.md")
+      .sort((a, b) => b.date - a.date);
+    const vinculaciones = new Set(["miembro", "colaborador"]);
+
+    for (const contribucion of contribuciones) {
+      const autor = contribucion.data.autor;
+      if (!autor?.nombre || !vinculaciones.has(autor.vinculacion)) {
+        throw new Error(
+          `La contribucion ${contribucion.inputPath} debe indicar autor.nombre y ` +
+            'autor.vinculacion ("miembro" o "colaborador").',
+        );
+      }
+    }
+
+    return contribuciones;
+  });
+
   eleventyConfig.addCollection("actividades", (api) =>
     api.getFilteredByGlob("src/contenido/actividades/*.md").reverse(),
   );

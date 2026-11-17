@@ -6,11 +6,15 @@
 
   {% set tituloPagina = titulo if titulo else sitio.nombreCorto %}
   {% set descripcionPagina = descripcion if descripcion else sitio.descripcion %}
-  {% set direccionCanonica = sitio.url + page.url %}
+  {% set direccionCanonica = sitio.url + (redireccion if redireccion else page.url) %}
 
   <title>{% if page.url == "/" %}{{ sitio.nombreCorto }} · {{ sitio.lema }}{% else %}{{ tituloPagina }} · {{ sitio.nombreCorto }}{% endif %}</title>
   <meta name="description" content="{{ descripcionPagina }}">
   <link rel="canonical" href="{{ direccionCanonica }}">
+  {% if redireccion %}
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url={{ redireccion }}">
+  {% endif %}
 
   <meta property="og:type" content="{{ tipoSocial if tipoSocial else 'website' }}">
   <meta property="og:site_name" content="{{ sitio.nombreCorto }}">

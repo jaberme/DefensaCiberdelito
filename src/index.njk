@@ -166,6 +166,7 @@ descripcion: Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciber
             <li><strong>{{ procedencia.ambito }}.</strong> {{ procedencia.descripcion }}</li>
           {% endfor %}
         </ul>
+        <p><a href="/colaboradores/">Conoce también a las personas colaboradoras</a>.</p>
       </div>
 
       <div>
@@ -197,6 +198,37 @@ descripcion: Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciber
 <section class="seccion{% if destacadas.length %} seccion--tinte{% endif %}">
   <div class="contenedor">
     <div class="cabecera-seccion">
+      <h2>Observatorio</h2>
+      <a href="/observatorio/">Todos los artículos y recursos</a>
+    </div>
+
+    {% if collections.observatorio.length %}
+      <div class="rejilla rejilla--dos">
+        {% for contribucion in collections.observatorio | limitar(2) %}
+          <article class="noticia">
+            <p class="contribucion-resumen__tipo">{{ contribucion.data.tipo }}</p>
+            <h3><a href="{{ contribucion.url }}">{{ contribucion.data.titulo }}</a></h3>
+            <p>{{ contribucion.data.entrada }}</p>
+            <p class="contribucion-resumen__firma" style="margin-top: var(--e-3);">
+              <span>{{ contribucion.data.autor.nombre }}</span>
+              <span aria-hidden="true">·</span>
+              {{ "Miembro" if contribucion.data.autor.vinculacion == "miembro" else "Colaborador/a" }}
+            </p>
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="vacio">
+        <h3>Todavía no hay contribuciones</h3>
+        <p>Los artículos, manuales y recursos de miembros y colaboradores se publicarán aquí.</p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="seccion{% if not destacadas.length %} seccion--tinte{% endif %}">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
       <h2>Actualidad</h2>
       <a href="/actualidad/">Todas las publicaciones</a>
     </div>
@@ -221,7 +253,7 @@ descripcion: Seminario Permanente «Seguridad Nacional, Sociedad Digital y Ciber
   </div>
 </section>
 
-<section class="seccion{% if not destacadas.length %} seccion--tinte{% endif %}">
+<section class="seccion{% if destacadas.length %} seccion--tinte{% endif %}">
   <div class="contenedor">
     <div class="rejilla rejilla--dos">
       <div class="prosa">

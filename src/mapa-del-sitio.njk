@@ -44,6 +44,17 @@ descripcion: Índice completo de las páginas de la web del Seminario Permanente
       <p>No hay actividades publicadas.</p>
     {% endif %}
 
+    <h2>Observatorio</h2>
+    {% if collections.observatorio.length %}
+      <ul>
+        {% for contribucion in collections.observatorio %}
+          <li><a href="{{ contribucion.url }}">{{ contribucion.data.titulo }}</a></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No hay contribuciones publicadas.</p>
+    {% endif %}
+
     <h2>Actualidad</h2>
     {% if collections.noticias.length %}
       <ul>

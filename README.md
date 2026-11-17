@@ -3,10 +3,12 @@
 Sitio institucional del Seminario Permanente, iniciativa altruista y multidisciplinar
 impulsada desde la Universidad de Almería. Reúne la identidad del Seminario, su manifiesto
 fundacional, el espacio de las Jornadas de Ciberseguridad, Ciberdefensa y Seguridad Nacional,
-las actividades y proyectos, la actualidad y las vías de participación.
+las actividades y proyectos, el Observatorio, los perfiles de colaboradores, la actualidad y
+las vías de participación.
 
-El sitio está pensado como una plataforma viva: añadir una noticia o abrir una nueva edición de
-las Jornadas consiste en crear un archivo de texto, sin tocar plantillas ni programación.
+El sitio está pensado como una plataforma viva: añadir una noticia, publicar una contribución o
+abrir una nueva edición de las Jornadas consiste en crear o editar archivos de contenido, sin
+tocar plantillas ni programación.
 
 ---
 
@@ -17,14 +19,16 @@ las Jornadas consiste en crear un archivo de texto, sin tocar plantillas ni prog
 3. [Trabajar en local](#trabajar-en-local)
 4. [Modificar contenidos](#modificar-contenidos)
 5. [Publicar una noticia](#publicar-una-noticia)
-6. [Crear una actividad o proyecto](#crear-una-actividad-o-proyecto)
-7. [Abrir una nueva edición de las Jornadas](#abrir-una-nueva-edición-de-las-jornadas)
-8. [Crear una página nueva](#crear-una-página-nueva)
-9. [Publicación en GitHub Pages](#publicación-en-github-pages)
-10. [Dominio propio](#dominio-propio)
-11. [Información pendiente de confirmar](#información-pendiente-de-confirmar)
-12. [Accesibilidad, rendimiento y datos personales](#accesibilidad-rendimiento-y-datos-personales)
-13. [Condiciones de uso](#condiciones-de-uso)
+6. [Publicar en el Observatorio](#publicar-en-el-observatorio)
+7. [Añadir un colaborador](#añadir-un-colaborador)
+8. [Crear una actividad o proyecto](#crear-una-actividad-o-proyecto)
+9. [Abrir una nueva edición de las Jornadas](#abrir-una-nueva-edición-de-las-jornadas)
+10. [Crear una página nueva](#crear-una-página-nueva)
+11. [Publicación en GitHub Pages](#publicación-en-github-pages)
+12. [Dominio propio](#dominio-propio)
+13. [Información pendiente de confirmar](#información-pendiente-de-confirmar)
+14. [Accesibilidad, rendimiento y datos personales](#accesibilidad-rendimiento-y-datos-personales)
+15. [Condiciones de uso](#condiciones-de-uso)
 
 ---
 
@@ -65,12 +69,14 @@ exigiría editar varias páginas.
 │   │   ├── navegacion.json          Menú principal y enlaces del pie
 │   │   ├── entidades.json           Entidades citadas en el manifiesto
 │   │   ├── miembros.json            Ámbitos de procedencia y relación de miembros
+│   │   ├── colaboradores.json       Perfiles de colaboradores
 │   │   ├── ejes.json                Ejes de trabajo de la portada
 │   │   └── estados.json             Etiquetas de estado de actividades y ediciones
 │   ├── _includes/                   Plantillas
 │   ├── assets/                      Estilos, script, tipografías e imágenes
 │   ├── contenido/
 │   │   ├── noticias/                Una noticia = un archivo .md
+│   │   ├── observatorio/             Una contribución = un archivo .md
 │   │   ├── actividades/             Una actividad = un archivo .md
 │   │   └── jornadas/                Una edición = un archivo .md
 │   └── *.njk, *.md                  Páginas fijas
@@ -131,6 +137,27 @@ Dos campos merecen atención especial en `src/_datos/sitio.json`:
 4. Escribe el cuerpo en Markdown.
 
 La noticia aparece sola en la portada, en `Actualidad`, en el mapa del sitio y en el canal Atom.
+
+## Publicar en el Observatorio
+
+1. Copia `plantillas/contribucion-observatorio.md` a `src/contenido/observatorio/`.
+2. Pon al archivo un nombre en minúsculas, sin acentos y con guiones.
+3. Rellena los datos, incluido el bloque `autor`. El campo `vinculacion` solo admite `miembro` o
+   `colaborador`; Eleventy valida esta condición antes de publicar.
+4. Escribe el contenido en Markdown. Las imágenes se guardan preferentemente en
+   `src/assets/img/observatorio/`; la plantilla muestra cómo incluir texto alternativo y pie.
+
+La contribución aparecerá en la portada, el Observatorio y el mapa del sitio.
+
+## Añadir un colaborador
+
+Añade la ficha a `src/_datos/colaboradores.json` y guarda su fotografía autorizada en
+`src/assets/img/colaboradores/`. Cada ficha incluye nombre, cargo, entidad, perfil profesional,
+fotografía, LinkedIn y web profesional. Si no se facilita LinkedIn, usa `null`: el icono se
+mostrará en gris, sin enlace.
+
+La estructura exacta y las precauciones sobre consentimiento figuran en
+[`docs/guia-contenidos.md`](docs/guia-contenidos.md#publicar-una-ficha-de-colaborador).
 
 ## Crear una actividad o proyecto
 

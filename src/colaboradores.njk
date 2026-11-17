@@ -1,0 +1,78 @@
+---
+layout: base.njk
+permalink: /colaboradores/
+titulo: Colaboradores
+descripcion: Perfiles profesionales de las personas que colaboran con el Seminario Permanente.
+---
+<div class="contenedor">
+  <div class="titular">
+    <p class="titular__categoria">Conocimiento y cooperación</p>
+    <h1>Colaboradores</h1>
+    <p class="titular__entrada">{{ colaboradores.introduccion }}</p>
+  </div>
+</div>
+
+<div class="contenedor">
+  {% if colaboradores.listado.length %}
+    <ul class="fichas-colaboradores">
+      {% for persona in colaboradores.listado %}
+        <li>
+          <article class="ficha-colaborador">
+            <div class="ficha-colaborador__foto">
+              <img
+                src="/assets/img/{{ persona.fotografia }}"
+                alt="{{ persona.fotografiaAlt }}"
+                width="520"
+                height="520"
+                loading="lazy"
+                decoding="async">
+            </div>
+            <div class="ficha-colaborador__contenido">
+              <h2>{{ persona.nombre }}</h2>
+              <p class="ficha-colaborador__cargo">{{ persona.cargo }}{% if persona.entidad %} · {{ persona.entidad }}{% endif %}</p>
+              <p class="ficha-colaborador__perfil">{{ persona.perfil }}</p>
+              <div class="ficha-colaborador__enlaces" aria-label="Perfiles profesionales de {{ persona.nombre }}">
+                {% if persona.linkedin %}
+                  <a class="perfil-enlace" href="{{ persona.linkedin }}" aria-label="LinkedIn de {{ persona.nombre }}">
+                    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5.2 7.9H1.6V22h3.6V7.9ZM3.4 2A2.1 2.1 0 1 0 3.4 6.2 2.1 2.1 0 0 0 3.4 2ZM22.4 14c0-4.2-2.2-6.2-5.2-6.2a4.5 4.5 0 0 0-4.1 2.3V7.9H9.5V22h3.6v-7c0-1.8.4-3.6 2.7-3.6 2.2 0 2.3 2.1 2.3 3.7V22h3.6l.7-8Z"/></svg>
+                    <span>LinkedIn</span>
+                  </a>
+                {% else %}
+                  <span class="perfil-enlace perfil-enlace--inactivo" aria-label="LinkedIn no facilitado por {{ persona.nombre }}" title="LinkedIn no facilitado">
+                    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5.2 7.9H1.6V22h3.6V7.9ZM3.4 2A2.1 2.1 0 1 0 3.4 6.2 2.1 2.1 0 0 0 3.4 2ZM22.4 14c0-4.2-2.2-6.2-5.2-6.2a4.5 4.5 0 0 0-4.1 2.3V7.9H9.5V22h3.6v-7c0-1.8.4-3.6 2.7-3.6 2.2 0 2.3 2.1 2.3 3.7V22h3.6l.7-8Z"/></svg>
+                    <span>LinkedIn no disponible</span>
+                  </span>
+                {% endif %}
+
+                {% if persona.web %}
+                  <a class="perfil-enlace" href="{{ persona.web }}" aria-label="Web profesional de {{ persona.nombre }}">
+                    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 0c2.6 2.7 4 6 4 10s-1.4 7.3-4 10m0-20C9.4 4.7 8 8 8 12s1.4 7.3 4 10M2.5 9h19M2.5 15h19"/></svg>
+                    <span>Web profesional</span>
+                  </a>
+                {% else %}
+                  <span class="perfil-enlace perfil-enlace--inactivo" aria-label="Web profesional no facilitada por {{ persona.nombre }}">
+                    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 0c2.6 2.7 4 6 4 10s-1.4 7.3-4 10m0-20C9.4 4.7 8 8 8 12s1.4 7.3 4 10M2.5 9h19M2.5 15h19"/></svg>
+                    <span>Web no disponible</span>
+                  </span>
+                {% endif %}
+              </div>
+            </div>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="vacio">
+      <h2>Perfiles en preparación</h2>
+      <p>Las fichas se publicarán cuando cada colaborador haya facilitado su perfil, fotografía y enlaces profesionales, y haya autorizado su publicación.</p>
+    </div>
+  {% endif %}
+</div>
+
+<div class="contenedor seccion seccion--ajustada">
+  <div class="prosa">
+    <h2>Colaborar con el Seminario</h2>
+    <p>El Seminario está abierto a especialistas que quieran compartir experiencia, participar en actividades o contribuir al Observatorio de forma desinteresada.</p>
+    <p><a class="boton boton--tinta" href="/contacto/">Cómo ponerse en contacto</a></p>
+  </div>
+</div>

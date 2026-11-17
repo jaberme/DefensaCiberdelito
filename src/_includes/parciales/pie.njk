@@ -10,7 +10,16 @@
         <h2>Secciones</h2>
         <ul>
           {% for enlace in navegacion.principal %}
-            <li><a href="{{ enlace.url }}">{{ enlace.texto }}</a></li>
+            <li>
+              <a href="{{ enlace.url }}">{{ enlace.texto }}</a>
+              {% if enlace.submenu %}
+                <ul class="pie__sublista">
+                  {% for secundario in enlace.submenu %}
+                    <li><a href="{{ secundario.url }}">{{ secundario.texto }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
       </div>

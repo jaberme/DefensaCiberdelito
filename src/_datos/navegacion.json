@@ -1,13 +1,23 @@
 {
   "principal": [
-    { "texto": "El Seminario", "url": "/seminario/" },
-    { "texto": "Manifiesto", "url": "/manifiesto/" },
-    { "texto": "Miembros", "url": "/miembros/" },
-    { "texto": "Jornadas", "url": "/jornadas/" },
-    { "texto": "Actividades", "url": "/actividades/" },
-    { "texto": "Observatorio", "url": "/observatorio/" },
-    { "texto": "Colaboradores", "url": "/colaboradores/" },
+    {
+      "texto": "El Seminario",
+      "url": "/seminario/",
+      "submenu": [
+        { "texto": "Manifiesto", "url": "/manifiesto/" },
+        { "texto": "Miembros", "url": "/miembros/" },
+        { "texto": "Colaboradores", "url": "/colaboradores/" }
+      ]
+    },
+    {
+      "texto": "Actividades",
+      "url": "/actividades/",
+      "submenu": [
+        { "texto": "Jornadas", "url": "/jornadas/" }
+      ]
+    },
     { "texto": "Actualidad", "url": "/actualidad/" },
+    { "texto": "Observatorio", "url": "/observatorio/" },
     { "texto": "Contacto", "url": "/contacto/" }
   ],
   "pie": [

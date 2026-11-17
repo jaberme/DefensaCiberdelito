@@ -17,8 +17,30 @@
       <ul class="navegacion__lista" id="menu-principal">
         {% for enlace in navegacion.principal %}
           {% set activo = (page.url == enlace.url) or (enlace.url != "/" and page.url.startsWith(enlace.url)) %}
-          <li>
-            <a class="navegacion__enlace" href="{{ enlace.url }}"{% if activo %} aria-current="page"{% endif %}>{{ enlace.texto }}</a>
+          <li class="navegacion__item{% if enlace.submenu %} navegacion__item--con-submenu{% endif %}"{% if enlace.submenu %} data-submenu-abierto="no"{% endif %}>
+            <div class="navegacion__principal">
+              <a class="navegacion__enlace" href="{{ enlace.url }}"{% if activo %} aria-current="page"{% endif %}>{{ enlace.texto }}</a>
+              {% if enlace.submenu %}
+                <button
+                  class="navegacion__desplegable"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="submenu-{{ loop.index }}"
+                  aria-label="Mostrar opciones de {{ enlace.texto }}">
+                  <span aria-hidden="true"></span>
+                </button>
+              {% endif %}
+            </div>
+            {% if enlace.submenu %}
+              <ul class="navegacion__submenu" id="submenu-{{ loop.index }}">
+                {% for secundario in enlace.submenu %}
+                  {% set secundarioActivo = (page.url == secundario.url) or (secundario.url != "/" and page.url.startsWith(secundario.url)) %}
+                  <li>
+                    <a class="navegacion__submenu-enlace" href="{{ secundario.url }}"{% if secundarioActivo %} aria-current="page"{% endif %}>{{ secundario.texto }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
           </li>
         {% endfor %}
       </ul>

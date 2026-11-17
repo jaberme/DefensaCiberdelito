@@ -18,7 +18,16 @@ descripcion: Índice completo de las páginas de la web del Seminario Permanente
     <ul>
       <li><a href="/">Inicio</a></li>
       {% for enlace in navegacion.principal %}
-        <li><a href="{{ enlace.url }}">{{ enlace.texto }}</a></li>
+        <li>
+          <a href="{{ enlace.url }}">{{ enlace.texto }}</a>
+          {% if enlace.submenu %}
+            <ul>
+              {% for secundario in enlace.submenu %}
+                <li><a href="{{ secundario.url }}">{{ secundario.texto }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
       {% endfor %}
     </ul>
 

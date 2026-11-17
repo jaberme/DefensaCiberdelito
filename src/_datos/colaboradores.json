@@ -1,5 +1,16 @@
 {
   "introduccion": "Profesionales que colaboran de forma desinteresada con el Seminario, aportando conocimiento y experiencia a sus actividades, publicaciones y proyectos.",
-  "listado": [],
+  "listado": [
+    {
+      "nombre": "Antonio Pérez Seronellas",
+      "cargo": "SOC",
+      "entidad": "Telefónica Tech (Telefónica)",
+      "perfil": "Profesional especializado en respuesta ante incidentes, análisis de riesgos y formación en seguridad digital.",
+      "fotografia": "colaboradores/seronellas.jpg",
+      "fotografiaAlt": "Antonio Pérez Seronellas.",
+      "linkedin": "https://www.linkedin.com/in/antonioperezseronellas/",
+      "web": "https://telefonicatech.com/"
+    }
+  ],
   "instruccionesListado": "Añade una ficha solo cuando la persona haya autorizado la publicación de su nombre, fotografía y perfil. Cada objeto debe incluir nombre, cargo, entidad, perfil, fotografia, fotografiaAlt, linkedin y web. Usa null en linkedin cuando no haya facilitado ese enlace; la ficha mostrará entonces su icono en gris."
 }

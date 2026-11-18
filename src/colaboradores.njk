@@ -18,7 +18,7 @@ descripcion: Perfiles profesionales de las personas que colaboran con el Seminar
       {% for persona in colaboradores.listado %}
         <li>
           <article class="ficha-colaborador">
-            <div class="ficha-colaborador__foto">
+            <div class="ficha-colaborador__foto{% if persona.fotografiaCompleta %} ficha-colaborador__foto--completa{% endif %}">
               <img
                 src="/assets/img/{{ persona.fotografia }}"
                 alt="{{ persona.fotografiaAlt }}"

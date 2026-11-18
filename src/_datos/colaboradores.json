@@ -3,13 +3,13 @@
   "listado": [
     {
       "nombre": "Antonio Pérez Seronellas",
-      "cargo": "SOC",
-      "entidad": "Telefónica Tech (Telefónica)",
-      "perfil": "Profesional especializado en respuesta ante incidentes, análisis de riesgos y formación en seguridad digital.",
+      "cargo": "CSIRT/DFIR Manager",
+      "entidad": "Telefónica",
+      "perfil": "Profesional especializado en análisis forense digital y respuesta a incidentes. Creación, capacitación y gestión de equipos de respuesta a incidentes (IRTs). Investigación en IA aplicado a DFIR",
       "fotografia": "colaboradores/seronellas.jpg",
-      "fotografiaAlt": "Antonio Pérez Seronellas.",
+      "fotografiaAlt": "Retrato de Antonio Pérez Seronellas",
       "linkedin": "https://www.linkedin.com/in/antonioperezseronellas/",
-      "web": "https://telefonicatech.com/"
+      "web": ""
     },
     {
       "nombre": "Iciar López-Vidriero Tejedor",

@@ -1,5 +1,17 @@
 # Procedencia de los contenidos
 
+## Campañas de influencia y guerra híbrida (18 de noviembre de 2026)
+
+La contribución del Observatorio
+`src/contenido/observatorio/campanas-influencia-guerra-hibrida.md` procede del texto facilitado
+por Francisco Torrecillas Gilabert en `publicar/noticia.txt`. La edición para la web conserva el
+contenido y la voz del autor, y añade encabezados, listas, negritas y correcciones ortotipográficas
+para facilitar la lectura. La atribución incluye su cargo de Networking & Communications Manager
+en Cosentino Group - Grupo Cosentino y su pertenencia al Seminario Permanente.
+
+Las tres imágenes también fueron facilitadas junto con el texto. Se han convertido al formato
+WebP, sin alterar su composición, para reducir el peso de descarga.
+
 ## La función de seguridad y la estrategia de negocio (16 de noviembre de 2026)
 
 La contribución del Observatorio

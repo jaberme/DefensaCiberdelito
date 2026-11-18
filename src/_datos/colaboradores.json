@@ -10,6 +10,16 @@
       "fotografiaAlt": "Antonio Pérez Seronellas.",
       "linkedin": "https://www.linkedin.com/in/antonioperezseronellas/",
       "web": "https://telefonicatech.com/"
+    },
+    {
+      "nombre": "Iciar López-Vidriero Tejedor",
+      "cargo": "Abogada especializada en Nuevas Tecnologías, Protección de Datos y Ciberseguridad",
+      "entidad": "ICEF Consultores",
+      "perfil": "Abogada especializada en Nuevas Tecnologías, Protección de Datos y Ciberseguridad. Delegada de Protección de Datos para varias entidades. Forma parte del cuerpo docente de varias universidades tanto en España como Perú impartiendo la maestría de Ciberseguridad entre otras maestrías.",
+      "fotografia": "colaboradores/iciar.png",
+      "fotografiaAlt": "Iciar López-Vidriero Tejedor.",
+      "linkedin": "https://www.linkedin.com/in/iciarlvidriero/",
+      "web": "https://www.icefconsultores.com/"
     }
   ],
   "instruccionesListado": "Añade una ficha solo cuando la persona haya autorizado la publicación de su nombre, fotografía y perfil. Cada objeto debe incluir nombre, cargo, entidad, perfil, fotografia, fotografiaAlt, linkedin y web. Usa null en linkedin cuando no haya facilitado ese enlace; la ficha mostrará entonces su icono en gris."

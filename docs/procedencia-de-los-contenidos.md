@@ -112,3 +112,18 @@ El PDF facilitado para la publicación se conserva en
 `src/assets/documentos/la-voz-de-almeria-empresas-ciberataques.pdf` y se ofrece desde la noticia
 con la autoría, el medio y las fechas indicados. La información sobre las III Jornadas se ha
 contrastado con su ficha en este sitio.
+
+## Información de La Voz de Almería sobre menores y redes (18 de noviembre de 2026)
+
+La noticia `src/contenido/noticias/menores-redes-depredadores-la-voz.md` es una redacción propia
+basada en la información de Víctor Navarro publicada en la página 10 de La Voz de Almería el 18
+de noviembre de 2026. Resume el análisis de José Antonio Álvarez Bermejo sobre el desplazamiento
+de menores desde redes sociales y videojuegos hacia canales con menor supervisión, así como los
+riesgos de captación, manipulación y extorsión.
+
+La pertenencia de Álvarez Bermejo al Seminario, su perfil profesional, su experiencia de trabajo
+con policías de toda Europa y la propuesta de desarrollar en el Seminario un centro de asistencia
+rápida e institucional han sido facilitados por el propio participante para esta publicación; no
+se presentan como declaraciones de La Voz de Almería. El PDF aportado se conserva en
+`src/assets/documentos/2026-11-18-la-voz-de-almeria-menores-redes-depredadores.pdf` y se enlaza
+desde la noticia con la fecha, el medio, la página y la autoría indicados.

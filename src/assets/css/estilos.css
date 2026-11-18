@@ -932,11 +932,6 @@ hr {
   object-fit: cover;
 }
 
-.ficha-colaborador__foto--completa img {
-  object-fit: contain;
-  object-position: center top;
-}
-
 .ficha-colaborador__contenido {
   display: flex;
   flex-direction: column;

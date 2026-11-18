@@ -746,6 +746,8 @@ hr {
 .estado--programada::before {
   background: linear-gradient(90deg, var(--tinta-3) 50%, transparent 50%);
 }
+.estado--cancelada::before { background: currentColor; border-radius: 0; }
+.estado--cancelada { color: var(--gris); }
 .estado--propuesta::before { background: transparent; }
 .estado--propuesta { color: var(--gris); }
 

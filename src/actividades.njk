@@ -2,7 +2,7 @@
 layout: base.njk
 permalink: /actividades/
 titulo: Actividades y proyectos
-descripcion: Conferencias, formación, investigación, divulgación y proyectos impulsados desde el Seminario Permanente, distinguiendo las actividades realizadas, las programadas y las propuestas aún sin confirmar.
+descripcion: Conferencias, formación, investigación, divulgación y proyectos impulsados desde el Seminario Permanente, distinguiendo las actividades realizadas, las programadas, las canceladas y las propuestas aún sin confirmar.
 ---
 <div class="contenedor">
   <div class="titular">
@@ -26,7 +26,7 @@ descripcion: Conferencias, formación, investigación, divulgación y proyectos 
     {% endfor %}
   </div>
 
-  {% set orden = ["programada", "realizada", "propuesta"] %}
+  {% set orden = ["programada", "realizada", "cancelada", "propuesta"] %}
   {% set hayAlguna = collections.actividades.length %}
 
   {% if hayAlguna %}

@@ -1,6 +1,7 @@
 {
   "actividad": {
     "realizada": { "etiqueta": "Realizada", "descripcion": "Actividad ya celebrada, con su documentación disponible cuando exista." },
+    "cancelada": { "etiqueta": "Cancelada", "descripcion": "Actividad cuya celebración ha sido cancelada." },
     "programada": { "etiqueta": "Programada", "descripcion": "Actividad confirmada, con fecha y condiciones ya establecidas." },
     "propuesta": { "etiqueta": "Propuesta", "descripcion": "Iniciativa en estudio, todavía sin confirmar. Se publica para dar cuenta del trabajo en curso, no como compromiso adquirido." }
   },

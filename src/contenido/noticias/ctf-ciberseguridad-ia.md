@@ -1,9 +1,15 @@
 ---
 titulo: "CTF en la Universidad de Almería: inteligencia artificial y ciberseguridad"
-entrada: "El Seminario Permanente organiza un CTF en el que podrás crear tu propio agente de IA para resolver retos de seguridad. Participan Lobera.ai, Caliphal Labs y Helmcode."
-descripcion: "Crea un agente de inteligencia artificial para resolver retos de ciberseguridad y opta a participar en la segunda fase de ACDX en Madrid."
+entrada: "Cancelada por decisión de la organización la jornada de inteligencia artificial y ciberseguridad prevista para el 30 de noviembre de 2026 en la UAL."
+descripcion: "La organización ha cancelado la jornada del 30 de noviembre de 2026 sin facilitar más detalles."
 date: 2026-10-05
 ---
+
+## Aviso de cancelación
+
+La organización ha decidido cancelar el evento previsto para el **30 de noviembre de 2026**, sin facilitar más detalles. Desde el Seminario Permanente consideramos esta decisión una enorme falta de consideración hacia las personas interesadas en participar.
+
+La inscripción está cerrada. La información que sigue corresponde al anuncio original de la actividad.
 
 ## La UAL se incorpora a una innovadora iniciativa nacional que combina ciberseguridad, inteligencia artificial y competición
 
@@ -73,10 +79,11 @@ Con esta actividad, la Universidad de Almería ofrece a sus estudiantes la posib
 ## Datos prácticos
 
 - **Evento:** ACDX – Automated Cyber Defence Challenge
-- **Lugar:** Universidad de Almería. El aula se comunicará por correo electrónico a las personas inscritas.
+- **Estado:** Cancelado por decisión de la organización.
+- **Lugar previsto:** Universidad de Almería.
 - **Formato:** CTF universitario basado en agentes autónomos de inteligencia artificial
 - **Áreas:** Ciberseguridad, inteligencia artificial, pentesting, automatización, criptografía, seguridad web e ingeniería inversa
 - **Participación:** Por equipos
 - **Curso académico:** 2026-2027
-- **Fecha y horario en la UAL:** Lunes 30 de noviembre de 2026, de 16:00 a 17:30.
+- **Fecha y horario previstos (evento cancelado):** Lunes 30 de noviembre de 2026, de 16:00 a 17:30.
 - **Inscripción:** INSCRIPCIÓN CERRADA

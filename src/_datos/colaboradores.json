@@ -2,6 +2,15 @@
   "introduccion": "Profesionales que colaboran de forma desinteresada con el Seminario, aportando conocimiento y experiencia a sus actividades, publicaciones y proyectos.",
   "listado": [
     {
+      "nombre": "Pedro Sánchez Cordero",
+      "cargo": "CISO / LISO",
+      "entidad": "IndraMind y LISO (Grupo Indra)",
+      "perfil": "DFIR. Áreas de especialización incluyen el análisis de malware y la detección de amenazas internas. Asesor de organismos públicos, entidades financieras y empresas del IBEX en la preparación ante ciberataques, su contención y la recuperación de las operaciones, Esquema Nacional de Seguridad (ENS), el RGPD y el estándar PCI DSS, e interviene como perito en procedimientos judiciales.",
+      "fotografia": "colaboradores/pedro.jpg",
+      "fotografiaAlt": "Pedro Sánchez Cordero",
+      "linkedin": "https://www.linkedin.com/in/pedrosanchezcordero/",
+      "web": ""
+    },{
       "nombre": "Antonio Pérez Seronellas",
       "cargo": "CSIRT/DFIR Manager",
       "entidad": "Telefónica",

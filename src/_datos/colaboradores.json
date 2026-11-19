@@ -7,8 +7,17 @@
       "entidad": "Telefónica",
       "perfil": "Profesional especializado en análisis forense digital y respuesta a incidentes. Creación, capacitación y gestión de equipos de respuesta a incidentes (IRTs). Investigación en IA aplicado a DFIR",
       "fotografia": "colaboradores/seronellas.jpg",
-      "fotografiaAlt": "Retrato de Antonio Pérez Seronellas",
+      "fotografiaAlt": "Antonio Pérez Seronellas",
       "linkedin": "https://www.linkedin.com/in/antonioperezseronellas/",
+      "web": ""
+    },{
+      "nombre": "Tomás Hidalgo Salvador",
+      "cargo": "Internal eIDAS Compliance Auditor",
+      "entidad": "IndraMind CyberSecurity",
+      "perfil": "Profesional con amplia experiencia en TI y Ciberseguridad, especializado en auditoría y cumplimiento normativo de servicios electrónicos de confianza. Experiencia en infraestructuras de clave pública (PKI), gestión criptográfica, identidad digital y el marco regulatorio europeo eIDAS, con especial interés en el ecosistema europeo de identidad digital y la EUDI Wallet.",
+      "fotografia": "colaboradores/tomas.png",
+      "fotografiaAlt": "Tomás Hidalgo Salvador",
+      "linkedin": "https://www.linkedin.com/in/tom%C3%A1s-hidalgo-salvador-8404b152/",
       "web": ""
     },
     {

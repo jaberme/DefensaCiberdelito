@@ -605,7 +605,7 @@ hr {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .contribucion-resumen__tipo {

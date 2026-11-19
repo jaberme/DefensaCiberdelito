@@ -1,5 +1,19 @@
 # Procedencia de los contenidos
 
+## Tu identidad, en tu móvil: la nueva cartera digital europea (19 de noviembre de 2026)
+
+La contribución del Observatorio `src/contenido/observatorio/identidad-digital-europea.md`
+procede del artículo facilitado en `articulo/articulo_identidad_seminario_permanente_v4.md`.
+Se conserva el texto del autor, se adapta la jerarquía de encabezados y se corrige un resto de
+formato en la puntuación. La firma corresponde a Tomás Hidalgo Salvador, colaborador del
+Seminario Permanente e Internal eIDAS Compliance Auditor · IndraMind CyberSecurity.
+
+Las tres imágenes se copian sin modificaciones de la carpeta de imágenes que acompaña al
+original. Se conservan los créditos aportados: Comisión Europea para el logotipo EUDI Wallet;
+elaboración propia a partir de un prototipo experimental para la incorporación de credenciales;
+e ilustración de elaboración propia para la identidad frente al fraude. Se añaden textos
+alternativos y enlaces a las imágenes completas.
+
 ## Campañas de influencia y guerra híbrida (18 de noviembre de 2026)
 
 La contribución del Observatorio

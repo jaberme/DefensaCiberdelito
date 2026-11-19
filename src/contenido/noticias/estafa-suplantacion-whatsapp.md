@@ -5,6 +5,8 @@ descripcion: "Un caso real de suplantación en WhatsApp: mensajes fraudulentos, 
 date: 2026-11-19
 ---
 
+**Autor: Francisco Torrecillas**, miembro del Seminario Permanente y Networking & Communications Manager en Cosentino Group - Grupo Cosentino.
+
 Hace unos días un familiar me hizo llegar un mensaje de lo más bizarro. Como la mayoría de nosotros, ese familiar (de una cierta edad y por tanto, más bien escasa habilidad digital) utiliza WhatsApp a diario para comunicarse con familiares y amigos.
 
 Todo comenzó con el siguiente mensaje: «¿Me podrías hacer un favor?». De inmediato y de forma semiautomática le contesté: «Tú dirás» pero, acto seguido, me dije que no podía ser … esto es raro … y le llamé preguntándole qué necesitaba. Su respuesta desconcertada me confirmó la sospecha. Alguien estaba suplantando su identidad digital en WhatsApp. No pude evitar la tentación así que seguí el juego y el resultado fue esta secuencia de mensajes intercambiados en los que se han borrado algunos detalles para no incurrir en algún disgusto legal:

@@ -30,6 +30,16 @@
       "fotografiaAlt": "Iciar López-Vidriero Tejedor.",
       "linkedin": "https://www.linkedin.com/in/iciarlvidriero/",
       "web": "https://www.icefconsultores.com/"
+    },
+     {
+      "nombre": "Carlos Vila Martínez",
+      "cargo": "Cofundador y CEO",
+      "entidad": "3inLAB Informática Forense",
+      "perfil": "Profesional especializado en seguridad de la información, peritaje tecnológico y soporte técnico avanzado para empresas del sector de la distribución. DPO y miembro del COP CPETIG",
+      "fotografia": "colaboradores/cvilamar.jpg",
+      "fotografiaAlt": "Carlos Vila Martínez",
+      "linkedin": "https://www.linkedin.com/in/cvilamar/",
+      "web": "https://3inlab.es"
     }
   ],
   "instruccionesListado": "Añade una ficha solo cuando la persona haya autorizado la publicación de su nombre, fotografía y perfil. Cada objeto debe incluir nombre, cargo, entidad, perfil, fotografia, fotografiaAlt, linkedin y web. Usa null en linkedin cuando no haya facilitado ese enlace; la ficha mostrará entonces su icono en gris."

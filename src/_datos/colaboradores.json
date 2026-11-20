@@ -49,6 +49,16 @@
       "fotografiaAlt": "Carlos Vila Martínez",
       "linkedin": "https://www.linkedin.com/in/cvilamar/",
       "web": "https://3inlab.es"
+    },
+    {
+      "nombre": "Carmelo Jesús Aguilera Galindo",
+      "cargo": "Abogado, Fundador de la consultora",
+      "entidad": "Parabellum Intelligence Consulting",
+      "perfil": "Profesional Analista Terrorismo Yihadista,",
+      "fotografia": "colaboradores/carmelo.jpg",
+      "fotografiaAlt": "Carmelo Jesús Aguilera Galindo",
+      "linkedin": "https://www.linkedin.com/in/carmelo-jes%C3%BAs-aguilera-galindo-897a0a62",
+      "web": ""
     }
   ],
   "instruccionesListado": "Añade una ficha solo cuando la persona haya autorizado la publicación de su nombre, fotografía y perfil. Cada objeto debe incluir nombre, cargo, entidad, perfil, fotografia, fotografiaAlt, linkedin y web. Usa null en linkedin cuando no haya facilitado ese enlace; la ficha mostrará entonces su icono en gris."

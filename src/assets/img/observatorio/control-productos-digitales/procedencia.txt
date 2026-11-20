@@ -1,0 +1,11 @@
+Recursos del artículo «La dependencia que puede detener su empresa».
+Fecha: 20 de noviembre de 2026.
+
+portada.jpg: ilustración conceptual generada con la herramienta integrada image_gen;
+optimizada para la web a 1600 × 900 píxeles. No documenta una instalación real.
+
+trazabilidad.svg y correccion-verificada.svg: diagramas técnicos originales,
+elaborados en SVG. Sus descripciones accesibles explican las relaciones y el ciclo.
+
+Prompt utilizado para la portada:
+Use case: stylized-concept. Asset type: wide editorial cover, 16:9, for a rigorous Spanish university article about cyber resilience in local industrial and agricultural companies. Scene: one technically plausible industrial control cabinet in foreground, door partly open exposing controller electronics, connected to a greenhouse irrigation installation on the left and a produce packing conveyor on the right. Translucent subtle overlays reveal software modules, remote maintenance connection, cloud dependency and authenticated update paths as a coherent network. A small amber warning on one hidden firmware module propagates a restrained amber trace toward the production line, showing business dependency without disaster imagery. Mood: serious, analytical, credible, elegant navy and cyan with restrained amber highlights, photorealistic mixed with precise editorial 3D visualization. Clear central subject, readable at small size. No text or numbers, no logos, no hackers, no explosions, no exaggerated fear, no people. Conceptual illustration, not a photo documenting a real facility.

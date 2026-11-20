@@ -59,6 +59,16 @@
       "fotografiaAlt": "Carmelo Jesús Aguilera Galindo",
       "linkedin": "https://www.linkedin.com/in/carmelo-jes%C3%BAs-aguilera-galindo-897a0a62",
       "web": ""
+    },
+    {
+      "nombre": "Efrén Santos Pascual",
+      "cargo": "Abogado TIC y socio · Gobernanza jurídica de la ciberseguridad",
+      "entidad": "ICEF Consultores",
+      "perfil": "Abogado especializado en Derecho digital, privacidad y cumplimiento normativo. Asesora a empresas en gestión jurídica de ciberincidentes, evaluación de riesgos, responsabilidad de proveedores tecnológicos y protección de datos. Delegado de Protección de Datos externo y docente universitario en gobernanza y seguridad digital.",
+      "fotografia": "colaboradores/efren.jpg",
+      "fotografiaAlt": "Efrén Santos Pascual",
+      "linkedin": "https://www.linkedin.com/in/efrensantos/",
+      "web": "https://www.icefconsultores.com/"
     }
   ],
   "instruccionesListado": "Añade una ficha solo cuando la persona haya autorizado la publicación de su nombre, fotografía y perfil. Cada objeto debe incluir nombre, cargo, entidad, perfil, fotografia, fotografiaAlt, linkedin y web. Usa null en linkedin cuando no haya facilitado ese enlace; la ficha mostrará entonces su icono en gris."

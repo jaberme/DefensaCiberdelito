@@ -1,0 +1,7 @@
+Portada del artículo sobre la Comunicación C/2026/6013.
+Generada con la herramienta integrada image_gen el 20 de noviembre de 2026.
+Archivo web: portada.jpg, 1600 × 900 píxeles.
+La imagen es conceptual y no representa un producto real.
+
+Prompt utilizado:
+Use case: stylized-concept. Asset type: wide editorial cover for a Spanish university cybersecurity observatory article. Primary request: convey that cyber resilience requires oversight of EVERY digital component of a product throughout its lifetime. Sophisticated realistic 3D editorial illustration of an industrial electronic controller in an exploded view, revealing interconnected circuit board, microcontroller, sensor modules, firmware layers represented as translucent sheets of structured luminous code, third-party software modules and a remote data cloud, all joined into one coherent traceable system by fine luminous connections. A continuous protective translucent contour encloses the COMPLETE assembly including the external software and cloud, with small verification nodes on every component and one subtle amber vulnerability node under inspection. Emphasis on visibility, dependency control and ongoing maintenance, technically credible electronics. Landscape 16:9 composition readable at thumbnail size, elegant dark navy background with restrained cyan and warm amber lighting, crisp materials and generous breathing space. No lettering, no readable code, no logos, no watermark, no people, no hooded hackers. Create one polished cover image.

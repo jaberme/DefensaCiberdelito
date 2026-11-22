@@ -50,8 +50,9 @@ La seguridad digital es un esfuerzo colectivo. Estas jornadas son un ejemplo viv
 cooperación entre entidades educativas, públicas, privadas y cuerpos de seguridad del Estado.
 La Comisaría Provincial de Policía Nacional en Almería, la Guardia Civil, la Diputación
 Provincial de Almería, la Universidad de Almería, empresas líderes como Cosentino y organismos
-internacionales como Europol se unen en esta iniciativa para construir un frente unido contra
-la ciberdelincuencia.
+internacionales como el Centro Nacional de Inteligencia (CNI) y el Mando Conjunto del
+Ciberespacio (MCCE) se unen en esta iniciativa para construir un frente unido contra la
+ciberdelincuencia.
 
 ## Compromiso con un futuro digital seguro
 

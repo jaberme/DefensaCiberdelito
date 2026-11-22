@@ -58,7 +58,12 @@ de entrada hasta «Perspectivas y continuidad».
 
 Las entidades que figuran en `src/_datos/entidades.json` son **exactamente** las que el
 manifiesto cita: Universidad de Almería, Comisaría Provincial de Policía Nacional en Almería,
-Guardia Civil, Diputación Provincial de Almería, Cosentino y Europol.
+Guardia Civil, Diputación Provincial de Almería, Cosentino, Centro Nacional de Inteligencia
+(CNI) y Mando Conjunto del Ciberespacio (MCCE).
+
+Los logos del CNI y del MCCE se han obtenido de sus webs oficiales:
+[CNI](https://www.cni.es/images/logo/LOGO-CNI.png) y
+[EMAD](https://emad.defensa.gob.es/Galerias/unidades/mccd/img/Escudo_MCCE_C_nuevo.jpg).
 
 No se les atribuye ninguna condición formal —patrocinio, convenio, organización— que el
 manifiesto no exprese. La web lo advierte expresamente en la página de miembros, en el pie y en

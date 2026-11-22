@@ -838,6 +838,12 @@ hr {
 
 .tira-entidades span { line-height: 1.25; }
 
+.entidad__marca img.logotipo--fondo-oscuro,
+.tira-entidades img.logotipo--fondo-oscuro {
+  background: var(--tinta);
+  padding: 0.5rem;
+}
+
 /* --- Informacion pendiente de confirmacion ------------------------------ */
 .pendiente {
   background: var(--pendiente-fondo);

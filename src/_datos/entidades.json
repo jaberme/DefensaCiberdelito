@@ -32,10 +32,17 @@
       "logotipo": "entidades/cosentino.png"
     },
     {
-      "nombre": "Europol",
-      "ambito": "Organismo internacional",
-      "papel": "El manifiesto la menciona al describir la cooperación en el marco de las Jornadas.",
-      "logotipo": "entidades/europol.png"
+      "nombre": "Centro Nacional de Inteligencia (CNI)",
+      "ambito": "Inteligencia y seguridad nacional",
+      "papel": "El manifiesto lo menciona al describir la cooperación en el marco de las Jornadas.",
+      "logotipo": "entidades/cni.png",
+      "claseLogotipo": "logotipo--fondo-oscuro"
+    },
+    {
+      "nombre": "Mando Conjunto del Ciberespacio (MCCE)",
+      "ambito": "Defensa y ciberespacio",
+      "papel": "El manifiesto lo menciona al describir la cooperación en el marco de las Jornadas.",
+      "logotipo": "entidades/mcce.jpg"
     }
   ],
   "instruccionesLogotipo": "Para incorporar el logotipo de una entidad: (1) obtén la autorización expresa de uso; (2) guarda el archivo en src/assets/img/entidades/ con un nombre en minúsculas y sin acentos, por ejemplo universidad-de-almeria.svg; (3) escribe esa misma ruta relativa en el campo «logotipo» de este archivo, por ejemplo \"entidades/universidad-de-almeria.svg\". Mientras el campo valga null, la web muestra únicamente la denominación en texto, que es el tratamiento correcto si no hay autorización."

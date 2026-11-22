@@ -69,6 +69,16 @@
       "fotografiaAlt": "Efrén Santos Pascual",
       "linkedin": "https://www.linkedin.com/in/efrensantos/",
       "web": "https://www.icefconsultores.com/"
+    },
+    {
+      "nombre": "Miguel Ángel Rosa Caparrós",
+      "cargo": "Técnico de Ciberseguridad",
+      "entidad": "Agroponiente",
+      "perfil": "Profesional orientado a la seguridad de sistemas, redes e infraestructuras, con experiencia en administración, hardening, laboratorios ofensivos y defensivos, monitorización y resolución de incidencias en entornos IT corporativos.",
+      "fotografia": "colaboradores/miguel.jpg",
+      "fotografiaAlt": "Miguel Ángel Rosa Caparrós",
+      "linkedin": "http://www.linkedin.com/in/miguelangelrosacaparros",
+      "web": "https://miguelrosasec.github.io/portfolioMiguel/"
     }
   ],
   "instruccionesListado": "Añade una ficha solo cuando la persona haya autorizado la publicación de su nombre, fotografía y perfil. Cada objeto debe incluir nombre, cargo, entidad, perfil, fotografia, fotografiaAlt, linkedin y web. Usa null en linkedin cuando no haya facilitado ese enlace; la ficha mostrará entonces su icono en gris."

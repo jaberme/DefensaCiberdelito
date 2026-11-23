@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Implicaciones de la criptoanálisis asistida por inteligencia artificial para las organizaciones</title>
+  <desc id="desc">Cuatro prioridades alrededor de un núcleo de gobierno criptográfico: inventario, procedencia y validación, criptoagilidad y vigilancia. Una franja inferior recuerda que no hay evidencia de ruptura de los estándares criptográficos desplegados.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4f8fb"/><stop offset="1" stop-color="#e7f0f7"/></linearGradient>
+    <filter id="s2" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#183b5b" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="url(#bg2)"/>
+  <text x="60" y="72" fill="#102d49" font-family="system-ui, sans-serif" font-size="34" font-weight="700">Qué cambia para una organización</text>
+  <text x="60" y="108" fill="#49677f" font-family="system-ui, sans-serif" font-size="19">La señal relevante es acelerar la gobernanza, no sustituir algoritmos por reacción.</text>
+
+  <g font-family="system-ui, sans-serif" filter="url(#s2)">
+    <g transform="translate(445 205)">
+      <circle cx="155" cy="125" r="120" fill="#153d62"/>
+      <circle cx="155" cy="125" r="88" fill="none" stroke="#59d5e5" stroke-width="4" stroke-dasharray="8 10"/>
+      <text x="155" y="105" text-anchor="middle" fill="#fff" font-size="24" font-weight="700">Gobierno</text>
+      <text x="155" y="138" text-anchor="middle" fill="#fff" font-size="24" font-weight="700">criptográfico</text>
+      <text x="155" y="174" text-anchor="middle" fill="#bdebf1" font-size="17">decisiones basadas</text>
+      <text x="155" y="198" text-anchor="middle" fill="#bdebf1" font-size="17">en evidencia</text>
+    </g>
+
+    <g transform="translate(70 170)">
+      <rect width="300" height="150" rx="22" fill="#fff" stroke="#2e91a4" stroke-width="3"/>
+      <circle cx="55" cy="52" r="25" fill="#dff6f8"/>
+      <path d="M43 40h24v25H43zM48 34h14" fill="none" stroke="#167b8e" stroke-width="4"/>
+      <text x="95" y="48" fill="#153650" font-size="21" font-weight="700">Inventario</text>
+      <text x="30" y="95" fill="#506a7f" font-size="16">Saber dónde se usan algoritmos,</text>
+      <text x="30" y="120" fill="#506a7f" font-size="16">parámetros, bibliotecas y claves.</text>
+    </g>
+    <path d="M370 245L475 286" stroke="#7394aa" stroke-width="4" stroke-dasharray="8 7"/>
+
+    <g transform="translate(830 170)">
+      <rect width="300" height="150" rx="22" fill="#fff" stroke="#7656c7" stroke-width="3"/>
+      <circle cx="55" cy="52" r="25" fill="#eee9fc"/>
+      <path d="M43 52l9 9 17-20" fill="none" stroke="#6845bb" stroke-width="4" stroke-linecap="round"/>
+      <text x="95" y="48" fill="#153650" font-size="21" font-weight="700">Validación</text>
+      <text x="30" y="95" fill="#506a7f" font-size="16">Exigir artefactos reproducibles,</text>
+      <text x="30" y="120" fill="#506a7f" font-size="16">procedencia y revisión humana.</text>
+    </g>
+    <path d="M830 245L725 286" stroke="#7394aa" stroke-width="4" stroke-dasharray="8 7"/>
+
+    <g transform="translate(70 365)">
+      <rect width="300" height="150" rx="22" fill="#fff" stroke="#d58a25" stroke-width="3"/>
+      <circle cx="55" cy="52" r="25" fill="#fff1dc"/>
+      <path d="M41 52h28M59 42l10 10-10 10M51 69l-10-10 10-10" fill="none" stroke="#b96d0d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="95" y="48" fill="#153650" font-size="21" font-weight="700">Criptoagilidad</text>
+      <text x="30" y="95" fill="#506a7f" font-size="16">Poder cambiar primitivas y</text>
+      <text x="30" y="120" fill="#506a7f" font-size="16">parámetros sin rediseñar todo.</text>
+    </g>
+    <path d="M370 430L475 374" stroke="#7394aa" stroke-width="4" stroke-dasharray="8 7"/>
+
+    <g transform="translate(830 365)">
+      <rect width="300" height="150" rx="22" fill="#fff" stroke="#2e8b57" stroke-width="3"/>
+      <circle cx="55" cy="52" r="25" fill="#e4f5eb"/>
+      <circle cx="52" cy="49" r="12" fill="none" stroke="#237a4a" stroke-width="4"/>
+      <path d="M61 58l11 11" stroke="#237a4a" stroke-width="4" stroke-linecap="round"/>
+      <text x="95" y="48" fill="#153650" font-size="21" font-weight="700">Vigilancia</text>
+      <text x="30" y="95" fill="#506a7f" font-size="16">Seguir avisos, estándares y</text>
+      <text x="30" y="120" fill="#506a7f" font-size="16">revisiones de la comunidad.</text>
+    </g>
+    <path d="M830 430L725 374" stroke="#7394aa" stroke-width="4" stroke-dasharray="8 7"/>
+  </g>
+
+  <g transform="translate(115 565)" font-family="system-ui, sans-serif">
+    <rect width="970" height="65" rx="18" fill="#dceaf4"/>
+    <text x="485" y="41" text-anchor="middle" fill="#173c5c" font-size="19" font-weight="700">El trabajo publicado no demuestra una ruptura de los estándares criptográficos desplegados.</text>
+  </g>
+</svg>

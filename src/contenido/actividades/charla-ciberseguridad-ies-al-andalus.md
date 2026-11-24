@@ -4,7 +4,7 @@ entrada: Charla de un miembro del Seminario en las Jornadas de Software Libre, C
 descripcion: Charla «Ciberseguridad 3.0. Del virus artesanal al ataque aumentado por IA», impartida por José Antonio Álvarez Bermejo en las Jornadas SLCENT del IES Al-Andalus el 19 de noviembre de 2026 a las 17:00.
 date: 2026-11-19
 
-estado: programada
+estado: realizada
 periodo: "19 de noviembre de 2026, 17:00"
 lugar: "IES Al-Andalus, Almería"
 promueve: "IES Al-Andalus, dentro de las Jornadas SLCENT. Participa el Seminario Permanente: Seguridad Nacional, Sociedad Digital y Ciberdelito"

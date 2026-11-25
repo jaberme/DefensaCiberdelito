@@ -1091,6 +1091,32 @@ hr {
   font-size: var(--t-s);
 }
 
+.noticia-seguridad__figura--estrecha {
+  width: min(100%, 18rem);
+  margin-inline: auto;
+}
+
+/* --- Audio en noticias -------------------------------------------------- */
+.audio {
+  width: min(100%, 40rem);
+  margin: var(--e-6) auto;
+  padding: var(--e-4);
+  border: 1px solid var(--linea);
+  background: var(--papel-2);
+}
+
+.audio audio {
+  display: block;
+  width: 100%;
+}
+
+.audio figcaption {
+  margin-top: var(--e-2);
+  color: var(--gris);
+  font-size: var(--t-s);
+  text-align: center;
+}
+
 /* --- Vídeo en noticias -------------------------------------------------- */
 .video {
   width: min(100%, 40rem);

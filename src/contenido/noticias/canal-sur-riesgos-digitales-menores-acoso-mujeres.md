@@ -22,6 +22,8 @@ entorno digital.
   <figcaption id="credito-audio-canalsur">Canal Sur Radio Almería · 24 de noviembre de 2026 · 13 min 31 s. <a href="/assets/audio/entrevista-canal-sur-riesgos-menores.mp3" download>Descargar el MP3</a>.</figcaption>
 </figure>
 
+Puedes escuchar el [programa completo de Canal Sur Mediodía Almería en Canal Sur Más](https://audio.canalsurmas.es/videos/category/32603-canal-sur-mediodia-almeria).
+
 ## La falsa sensación de que «solo están jugando»
 
 El riesgo no reside únicamente en el nombre de una aplicación, sino en **las relaciones y las

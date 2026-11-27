@@ -4,7 +4,7 @@ entrada: "Una sesión de orientación sobre los perfiles profesionales de la cib
 descripcion: "Charla de orientación profesional sobre ciberseguridad, ciberdelito y DFIR en el IES Aguadulce el 26 de noviembre de 2026 a las 17:00."
 date: 2026-11-26
 
-estado: programada
+estado: realizada
 periodo: "26 de noviembre de 2026, 17:00"
 lugar: "IES Aguadulce, Aguadulce"
 promueve: "IES Aguadulce, dentro de sus Jornadas de Orientación"

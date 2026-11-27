@@ -1,5 +1,24 @@
 # Procedencia de los contenidos
 
+## La correlación de eventos como instrumento de investigación pericial (26 de noviembre de 2026)
+
+La contribución del Observatorio
+`src/contenido/observatorio/correlacion-eventos-investigacion-pericial.md` procede del
+documento Word `20261126 La correlación de eventos como instrumento de investigación pericial.docx`
+facilitado por el autor. Se conserva el texto íntegro, sus negritas y cursivas, y se adaptan
+los encabezados a la plantilla web. Se añaden la entradilla, la descripción para buscadores
+y una nota sobre el autor con enlace a la página de colaboradores. La fecha corresponde
+a la indicada en el nombre del documento.
+
+La firma corresponde a Carlos Vila Martínez, Cofundador y CEO · 3inLAB Informática Forense
+y colaborador del Seminario Permanente, según su ficha de colaboradores y la atribución
+solicitada. Las dos imágenes se extraen sin modificaciones del Word a
+`src/assets/img/observatorio/correlacion-eventos/`, conservando su orden y ubicación:
+la primera después del párrafo introductorio y la segunda antes de la conclusión.
+Se incorporan textos alternativos, pies y enlaces a las imágenes completas. Ambas
+infografías incluyen en el original la indicación «Imagen generada con IA», que también
+se recoge en sus pies.
+
 ## Tu identidad, en tu móvil: la nueva cartera digital europea (19 de noviembre de 2026)
 
 La contribución del Observatorio `src/contenido/observatorio/identidad-digital-europea.md`

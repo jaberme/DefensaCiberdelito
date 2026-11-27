@@ -1,5 +1,26 @@
 # Procedencia de los contenidos
 
+## ¿Podría la inteligencia artificial romper la criptografía antes que la computación cuántica? (27 de noviembre de 2026)
+
+La noticia `src/contenido/noticias/ia-criptografia-computacion-cuantica.md` reproduce la
+aportación facilitada por el usuario y atribuida expresamente a Tomás Hidalgo Salvador,
+Internal eIDAS Compliance Auditor · IndraMind CyberSecurity y colaborador del Seminario
+Permanente. Se aplica la plantilla de Actualidad, con firma profesional y enlace a
+colaboradores. Se conserva la entradilla y el cuerpo, se convierten los apartados en
+encabezados y se corrige «Este informaciones» por «Estas informaciones».
+
+La fuente facilitada, <https://scottaaronson.blog/?p=10362>, se consulta antes de publicar.
+El comentario n.º 23 del 24 de noviembre de 2026 incluye una aclaración posterior del
+investigador insistiendo en que los rumores no confirman una factorización en tiempo
+polinómico. Se añade esta precisión en una nota identificada como actualización editorial,
+sin atribuirla al autor de la aportación.
+
+La ilustración `src/assets/img/noticias/ia-criptografia-computacion-cuantica.png` se genera
+con la herramienta integrada imagegen y se identifica como conceptual y generada con IA.
+Prompt utilizado:
+
+> Use case: stylized-concept. Asset type: landscape editorial illustration for a Spanish university cybersecurity news article. Primary request: depict the open question of whether AI-assisted mathematics could threaten RSA cryptography before large-scale quantum computing. Scene: an intact metallic cryptographic padlock at the center, with subtle engraved prime-number patterns; on one side a luminous abstract neural network connected to a conventional silicon chip; on the other a distant quantum processor with delicate interference waves. Sophisticated restrained editorial 3D illustration, deep navy background, cyan and amber highlights, crisp details, wide 16:9 composition. Convey inquiry and mathematical uncertainty, not a confirmed breakthrough. No broken lock, no people, no company logos, no text, no watermark.
+
 ## La correlación de eventos como instrumento de investigación pericial (26 de noviembre de 2026)
 
 La contribución del Observatorio

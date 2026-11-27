@@ -12,6 +12,13 @@ tipoSocial: article
 
 <div class="contenedor contenedor--lectura">
   <article class="texto">
+    {% if autor.nombre %}
+    <div class="contribucion__autoria">
+      <p class="contribucion__autor">{{ autor.nombre }}</p>
+      {% if autor.perfil %}<p class="contribucion__perfil">{{ autor.perfil }}</p>{% endif %}
+      {% if autor.vinculacion == "colaborador" %}<p class="contribucion__datos"><a href="/colaboradores/">Colaborador del Seminario Permanente</a></p>{% endif %}
+    </div>
+    {% endif %}
     <p class="noticia__fecha">
       <time datetime="{{ page.date | fechaISO }}">{{ page.date | fechaLarga }}</time>
     </p>

@@ -8,7 +8,13 @@ autor:
   nombre: José Antonio Álvarez Bermejo
   vinculacion: miembro
   perfil: Doctor en Informática y profesor titular de la Universidad de Almería.
+imagen: /assets/img/observatorio/hashcat-unicode/portada.png
 ---
+
+<figure class="noticia-seguridad__figura">
+  <img src="/assets/img/observatorio/hashcat-unicode/portada.png" alt="Letras latinas, árabes y cirílicas y emoji se relacionan con bloques digitales bajo una lupa y se agrupan en posiciones de una máscara junto a una tarjeta gráfica." width="1672" height="941" decoding="async">
+  <figcaption>De los caracteres visibles a los bytes y las máscaras por tokens: representación conceptual del análisis de contraseñas Unicode con Hashcat. Ilustración generada con inteligencia artificial; los bloques no representan secuencias de bytes exactas.</figcaption>
+</figure>
 
 La recuperación de contraseñas debe realizarse únicamente sobre evidencias autorizadas, dentro del alcance judicial correspondiente y sobre copias forenses verificadas. El objetivo no es “romper cualquier contraseña”, sino reproducir de forma controlada el proceso que convirtió una cadena de caracteres concreta en el hash investigado.
 

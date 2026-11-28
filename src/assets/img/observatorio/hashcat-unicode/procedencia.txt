@@ -1,0 +1,9 @@
+Portada del artículo «Más allá de ASCII».
+Generada con la herramienta integrada image_gen para esta publicación.
+Ilustración conceptual; los bloques digitales no son una transcripción de bytes.
+
+Prompt inicial:
+Use case: scientific-educational. Asset type: wide editorial cover illustration for a Spanish university cybersecurity observatory article about Hashcat, Unicode and token masks in digital forensics. Create a polished conceptual illustration in landscape 16:9, deep navy with restrained cyan and amber light, legible at thumbnail size. A forensic laboratory work surface with a central transparent analysis prism: on the left float distinct typographic tiles showing é, Arabic ب, Cyrillic Ж, a heart emoji and a woman-technologist emoji; within the prism the glyphs resolve into organized groups of small byte tiles; on the right those groups remain visibly bundled as whole tokens in four clearly separated mask slots above a subtle GPU chip. Include a small magnifying lens inspecting the byte tiles, suggesting careful reproducible analysis. Sophisticated clean scientific editorial 3D illustration, generous spacing, crisp details, no people, no police insignia, no hooded hackers, no matrix rain, no padlock breaking. This is a conceptual depiction of generating and examining password candidates, not decrypting a hash backwards. No arrows. No headlines, captions, logos, watermarks or invented interface text. Only the individual glyphs described above and tiny hexadecimal byte pairs may appear. Opaque background.
+
+Revisión final:
+Preserve overall composition, colors, all glyphs, laboratory, GPU, and lighting. Remove all hexadecimal letters and digits from the small byte tiles inside the central transparent prism and replace them with unlabeled luminous cyan squares. Keep the large glyphs and the four token slots unchanged. Landscape 16:9.
